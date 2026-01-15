@@ -1,0 +1,4851 @@
+{
+  "settings": {
+    "languages": [
+      "en",
+      "id"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en",
+      "id"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "at,build,compani,did,previous,what,you,your": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "did,in,last,on,role,what,work,you,your": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "about,experi,me,tell,work,your": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "befor,did,do,kind,of,project,what,you": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "have,on,what,work,you": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "about,me,previous,tell,work,your": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "did,do,in,job,previous,what,you,your": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "respons,were,what,your": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "about,career,histori,me,tell,your": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "accomplish,have,what,you": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "histori,me,show,work,your": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "about,and,experi,me,project,tell,your": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "have,on,project,what,work,you": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "me,portfolio,project,show,your": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "in,is,portfolio,what,your": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "me,portfolio,show,your": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "are,in,portfolio,project,what,your": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "about,me,portfolio,tell,your": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "built,have,what,you": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "built,have,me,show,what,you": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "are,project,side,what,your": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "about,me,tell,work,your": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "can,me,show,what,you": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "me,show,work,your": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "creat,have,what,you": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "about,creation,me,tell,your": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "do,kind,like,of,on,problem,to,what,work,you": {
+            "intent": "portfolio.problems",
+            "domain": "default"
+          },
+          "are,challeng,in,interest,of,type,what,you": {
+            "intent": "portfolio.problems",
+            "domain": "default"
+          },
+          "do,enjoy,problem,solv,what,you": {
+            "intent": "portfolio.problems",
+            "domain": "default"
+          },
+          "do,like,on,to,what,work,you": {
+            "intent": "portfolio.problems",
+            "domain": "default"
+          },
+          "interest,what,you": {
+            "intent": "portfolio.problems",
+            "domain": "default"
+          },
+          "about,are,passion,what,you": {
+            "intent": "portfolio.problems",
+            "domain": "default"
+          },
+          "motiv,what,you": {
+            "intent": "portfolio.problems",
+            "domain": "default"
+          },
+          "about,expertis,me,technic,tell,your": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "do,technolog,use,what,you": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "is,stack,tech,what,your": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "are,familiar,technolog,what,with,you": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "do,have,skill,what,you": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "are,skill,technic,what,your": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "about,me,skill,tell,your": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "do,know,languag,program,what,you": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "do,tool,use,what,you": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "do,framework,know,what,you": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "are,at,good,what,you": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "can,do,what,you": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "can,contact,how,i,you": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "contact,inform,is,what,your": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "can,how,i,reach,you": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "email,is,what,your": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "contact,detail,give,me,your": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "can,find,i,where,you": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "contact,info,me,show,your": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "are,media,social,what,your": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "can,get,how,i,in,touch": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "is,linkedin,what,your": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "github,is,what,your": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "can,email,have,i,your": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "contact,i,to,want,you": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "do,how,i,out,reach": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "smalltalk.greet",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "smalltalk.greet",
+            "domain": "default"
+          },
+          "hey,there": {
+            "intent": "smalltalk.greet",
+            "domain": "default"
+          },
+          "i,know,more,to,want": {
+            "intent": "portfolio.more",
+            "domain": "default"
+          },
+          "me,more,tell": {
+            "intent": "portfolio.more",
+            "domain": "default"
+          },
+          "ask,can,i,what,you": {
+            "intent": "portfolio.more",
+            "domain": "default"
+          },
+          "ask,can,i,question,what": {
+            "intent": "portfolio.more",
+            "domain": "default"
+          },
+          "help,me,understand": {
+            "intent": "portfolio.more",
+            "domain": "default"
+          },
+          "ask,i,should,what": {
+            "intent": "portfolio.more",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "portfolio.experience": "default",
+          "portfolio.projects": "default",
+          "portfolio.problems": "default",
+          "portfolio.tech": "default",
+          "portfolio.contact": "default",
+          "smalltalk.greet": "default",
+          "portfolio.more": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "What did you build at your previous company?",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "What did you work on in your last role?",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tell me about your work experience",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "What kind of projects did you do before?",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "What have you worked on?",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tell me about your previous work",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "What did you do in your previous job?",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "What were your responsibilities?",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tell me about your career history",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "What have you accomplished?",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show me your work history",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tell me about your projects and experience.",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "What projects have you worked on?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show me your portfolio projects",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "What's in your portfolio?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show me your portfolio",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "What projects are in your portfolio?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tell me about your portfolio",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "What have you built?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show me what you've built",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "What are your side projects?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tell me about your work",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "What can you show me?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show me your work",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "What have you created?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tell me about your creations",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "What kind of problems do you like to work on?",
+            "intent": "portfolio.problems"
+          },
+          {
+            "domain": "default",
+            "utterance": "What type of challenges are you interested in?",
+            "intent": "portfolio.problems"
+          },
+          {
+            "domain": "default",
+            "utterance": "What problems do you enjoy solving?",
+            "intent": "portfolio.problems"
+          },
+          {
+            "domain": "default",
+            "utterance": "What do you like to work on?",
+            "intent": "portfolio.problems"
+          },
+          {
+            "domain": "default",
+            "utterance": "What interests you?",
+            "intent": "portfolio.problems"
+          },
+          {
+            "domain": "default",
+            "utterance": "What are you passionate about?",
+            "intent": "portfolio.problems"
+          },
+          {
+            "domain": "default",
+            "utterance": "What motivates you?",
+            "intent": "portfolio.problems"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tell me about your technical expertise.",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "What technologies do you use?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is your tech stack?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "What technologies are you familiar with?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "What skills do you have?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "What are your technical skills?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tell me about your skills",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "What programming languages do you know?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "What tools do you use?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "What frameworks do you know?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "What are you good at?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "What can you do?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "How can I contact you?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is your contact information?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "How can I reach you?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "What is your email?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "Give me your contact details",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "Where can I find you?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "Show me your contact info",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "What are your social media?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "How can I get in touch?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "What's your LinkedIn?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "What's your GitHub?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can I have your email?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "I want to contact you",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "How do I reach out?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hi",
+            "intent": "smalltalk.greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hello",
+            "intent": "smalltalk.greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "Hey there",
+            "intent": "smalltalk.greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "I want to know more",
+            "intent": "portfolio.more"
+          },
+          {
+            "domain": "default",
+            "utterance": "Tell me more",
+            "intent": "portfolio.more"
+          },
+          {
+            "domain": "default",
+            "utterance": "What can I ask you?",
+            "intent": "portfolio.more"
+          },
+          {
+            "domain": "default",
+            "utterance": "What questions can I ask?",
+            "intent": "portfolio.more"
+          },
+          {
+            "domain": "default",
+            "utterance": "Help me understand",
+            "intent": "portfolio.more"
+          },
+          {
+            "domain": "default",
+            "utterance": "What should I ask?",
+            "intent": "portfolio.more"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "what": 1,
+              "did": 1,
+              "you": 1,
+              "build": 1,
+              "at": 1,
+              "your": 1,
+              "previous": 1,
+              "compani": 1,
+              "work": 1,
+              "on": 1,
+              "in": 1,
+              "last": 1,
+              "role": 1,
+              "tell": 1,
+              "me": 1,
+              "about": 1,
+              "experi": 1,
+              "kind": 1,
+              "of": 1,
+              "project": 1,
+              "do": 1,
+              "befor": 1,
+              "have": 1,
+              "job": 1,
+              "were": 1,
+              "respons": 1,
+              "career": 1,
+              "histori": 1,
+              "accomplish": 1,
+              "show": 1,
+              "and": 1,
+              "portfolio": 1,
+              "is": 1,
+              "are": 1,
+              "built": 1,
+              "side": 1,
+              "can": 1,
+              "creat": 1,
+              "creation": 1,
+              "problem": 1,
+              "like": 1,
+              "to": 1,
+              "type": 1,
+              "challeng": 1,
+              "interest": 1,
+              "enjoy": 1,
+              "solv": 1,
+              "passion": 1,
+              "motiv": 1,
+              "technic": 1,
+              "expertis": 1,
+              "technolog": 1,
+              "use": 1,
+              "tech": 1,
+              "stack": 1,
+              "familiar": 1,
+              "with": 1,
+              "skill": 1,
+              "program": 1,
+              "languag": 1,
+              "know": 1,
+              "tool": 1,
+              "framework": 1,
+              "good": 1,
+              "how": 1,
+              "i": 1,
+              "contact": 1,
+              "inform": 1,
+              "reach": 1,
+              "email": 1,
+              "give": 1,
+              "detail": 1,
+              "where": 1,
+              "find": 1,
+              "info": 1,
+              "social": 1,
+              "media": 1,
+              "get": 1,
+              "touch": 1,
+              "linkedin": 1,
+              "github": 1,
+              "want": 1,
+              "out": 1,
+              "hi": 1,
+              "hello": 1,
+              "hey": 1,
+              "there": 1,
+              "more": 1,
+              "ask": 1,
+              "question": 1,
+              "help": 1,
+              "understand": 1,
+              "should": 1
+            },
+            "intents": {
+              "portfolio.experience": 1,
+              "portfolio.projects": 1,
+              "portfolio.problems": 1,
+              "portfolio.tech": 1,
+              "portfolio.contact": 1,
+              "smalltalk.greet": 1,
+              "portfolio.more": 1
+            },
+            "intentFeatures": {
+              "portfolio.experience": {
+                "what": 1,
+                "did": 1,
+                "you": 1,
+                "build": 1,
+                "at": 1,
+                "your": 1,
+                "previous": 1,
+                "compani": 1,
+                "work": 1,
+                "on": 1,
+                "in": 1,
+                "last": 1,
+                "role": 1,
+                "tell": 1,
+                "me": 1,
+                "about": 1,
+                "experi": 1,
+                "kind": 1,
+                "of": 1,
+                "project": 1,
+                "do": 1,
+                "befor": 1,
+                "have": 1,
+                "job": 1,
+                "were": 1,
+                "respons": 1,
+                "career": 1,
+                "histori": 1,
+                "accomplish": 1,
+                "show": 1
+              },
+              "portfolio.projects": {
+                "tell": 1,
+                "me": 1,
+                "about": 1,
+                "your": 1,
+                "project": 1,
+                "and": 1,
+                "experi": 1,
+                "what": 1,
+                "have": 1,
+                "you": 1,
+                "work": 1,
+                "on": 1,
+                "show": 1,
+                "portfolio": 1,
+                "is": 1,
+                "in": 1,
+                "are": 1,
+                "built": 1,
+                "side": 1,
+                "can": 1,
+                "creat": 1,
+                "creation": 1
+              },
+              "portfolio.problems": {
+                "what": 1,
+                "kind": 1,
+                "of": 1,
+                "problem": 1,
+                "do": 1,
+                "you": 1,
+                "like": 1,
+                "to": 1,
+                "work": 1,
+                "on": 1,
+                "type": 1,
+                "challeng": 1,
+                "are": 1,
+                "interest": 1,
+                "in": 1,
+                "enjoy": 1,
+                "solv": 1,
+                "passion": 1,
+                "about": 1,
+                "motiv": 1
+              },
+              "portfolio.tech": {
+                "tell": 1,
+                "me": 1,
+                "about": 1,
+                "your": 1,
+                "technic": 1,
+                "expertis": 1,
+                "what": 1,
+                "technolog": 1,
+                "do": 1,
+                "you": 1,
+                "use": 1,
+                "is": 1,
+                "tech": 1,
+                "stack": 1,
+                "are": 1,
+                "familiar": 1,
+                "with": 1,
+                "skill": 1,
+                "have": 1,
+                "program": 1,
+                "languag": 1,
+                "know": 1,
+                "tool": 1,
+                "framework": 1,
+                "good": 1,
+                "at": 1,
+                "can": 1
+              },
+              "portfolio.contact": {
+                "how": 1,
+                "can": 1,
+                "i": 1,
+                "contact": 1,
+                "you": 1,
+                "what": 1,
+                "is": 1,
+                "your": 1,
+                "inform": 1,
+                "reach": 1,
+                "email": 1,
+                "give": 1,
+                "me": 1,
+                "detail": 1,
+                "where": 1,
+                "find": 1,
+                "show": 1,
+                "info": 1,
+                "are": 1,
+                "social": 1,
+                "media": 1,
+                "get": 1,
+                "in": 1,
+                "touch": 1,
+                "linkedin": 1,
+                "github": 1,
+                "have": 1,
+                "want": 1,
+                "to": 1,
+                "do": 1,
+                "out": 1
+              },
+              "smalltalk.greet": {
+                "hi": 1,
+                "hello": 1,
+                "hey": 1,
+                "there": 1
+              },
+              "portfolio.more": {
+                "i": 1,
+                "want": 1,
+                "to": 1,
+                "know": 1,
+                "more": 1,
+                "tell": 1,
+                "me": 1,
+                "what": 1,
+                "can": 1,
+                "ask": 1,
+                "you": 1,
+                "question": 1,
+                "help": 1,
+                "understand": 1,
+                "should": 1
+              }
+            },
+            "featuresToIntent": {
+              "what": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.problems",
+                "portfolio.tech",
+                "portfolio.contact",
+                "portfolio.more"
+              ],
+              "did": [
+                "portfolio.experience"
+              ],
+              "you": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.problems",
+                "portfolio.tech",
+                "portfolio.contact",
+                "portfolio.more"
+              ],
+              "build": [
+                "portfolio.experience"
+              ],
+              "at": [
+                "portfolio.experience",
+                "portfolio.tech"
+              ],
+              "your": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.tech",
+                "portfolio.contact"
+              ],
+              "previous": [
+                "portfolio.experience"
+              ],
+              "compani": [
+                "portfolio.experience"
+              ],
+              "work": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.problems"
+              ],
+              "on": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.problems"
+              ],
+              "in": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.problems",
+                "portfolio.contact"
+              ],
+              "last": [
+                "portfolio.experience"
+              ],
+              "role": [
+                "portfolio.experience"
+              ],
+              "tell": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.tech",
+                "portfolio.more"
+              ],
+              "me": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.tech",
+                "portfolio.contact",
+                "portfolio.more"
+              ],
+              "about": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.problems",
+                "portfolio.tech"
+              ],
+              "experi": [
+                "portfolio.experience",
+                "portfolio.projects"
+              ],
+              "kind": [
+                "portfolio.experience",
+                "portfolio.problems"
+              ],
+              "of": [
+                "portfolio.experience",
+                "portfolio.problems"
+              ],
+              "project": [
+                "portfolio.experience",
+                "portfolio.projects"
+              ],
+              "do": [
+                "portfolio.experience",
+                "portfolio.problems",
+                "portfolio.tech",
+                "portfolio.contact"
+              ],
+              "befor": [
+                "portfolio.experience"
+              ],
+              "have": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.tech",
+                "portfolio.contact"
+              ],
+              "job": [
+                "portfolio.experience"
+              ],
+              "were": [
+                "portfolio.experience"
+              ],
+              "respons": [
+                "portfolio.experience"
+              ],
+              "career": [
+                "portfolio.experience"
+              ],
+              "histori": [
+                "portfolio.experience"
+              ],
+              "accomplish": [
+                "portfolio.experience"
+              ],
+              "show": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.contact"
+              ],
+              "and": [
+                "portfolio.projects"
+              ],
+              "portfolio": [
+                "portfolio.projects"
+              ],
+              "is": [
+                "portfolio.projects",
+                "portfolio.tech",
+                "portfolio.contact"
+              ],
+              "are": [
+                "portfolio.projects",
+                "portfolio.problems",
+                "portfolio.tech",
+                "portfolio.contact"
+              ],
+              "built": [
+                "portfolio.projects"
+              ],
+              "side": [
+                "portfolio.projects"
+              ],
+              "can": [
+                "portfolio.projects",
+                "portfolio.tech",
+                "portfolio.contact",
+                "portfolio.more"
+              ],
+              "creat": [
+                "portfolio.projects"
+              ],
+              "creation": [
+                "portfolio.projects"
+              ],
+              "problem": [
+                "portfolio.problems"
+              ],
+              "like": [
+                "portfolio.problems"
+              ],
+              "to": [
+                "portfolio.problems",
+                "portfolio.contact",
+                "portfolio.more"
+              ],
+              "type": [
+                "portfolio.problems"
+              ],
+              "challeng": [
+                "portfolio.problems"
+              ],
+              "interest": [
+                "portfolio.problems"
+              ],
+              "enjoy": [
+                "portfolio.problems"
+              ],
+              "solv": [
+                "portfolio.problems"
+              ],
+              "passion": [
+                "portfolio.problems"
+              ],
+              "motiv": [
+                "portfolio.problems"
+              ],
+              "technic": [
+                "portfolio.tech"
+              ],
+              "expertis": [
+                "portfolio.tech"
+              ],
+              "technolog": [
+                "portfolio.tech"
+              ],
+              "use": [
+                "portfolio.tech"
+              ],
+              "tech": [
+                "portfolio.tech"
+              ],
+              "stack": [
+                "portfolio.tech"
+              ],
+              "familiar": [
+                "portfolio.tech"
+              ],
+              "with": [
+                "portfolio.tech"
+              ],
+              "skill": [
+                "portfolio.tech"
+              ],
+              "program": [
+                "portfolio.tech"
+              ],
+              "languag": [
+                "portfolio.tech"
+              ],
+              "know": [
+                "portfolio.tech",
+                "portfolio.more"
+              ],
+              "tool": [
+                "portfolio.tech"
+              ],
+              "framework": [
+                "portfolio.tech"
+              ],
+              "good": [
+                "portfolio.tech"
+              ],
+              "how": [
+                "portfolio.contact"
+              ],
+              "i": [
+                "portfolio.contact",
+                "portfolio.more"
+              ],
+              "contact": [
+                "portfolio.contact"
+              ],
+              "inform": [
+                "portfolio.contact"
+              ],
+              "reach": [
+                "portfolio.contact"
+              ],
+              "email": [
+                "portfolio.contact"
+              ],
+              "give": [
+                "portfolio.contact"
+              ],
+              "detail": [
+                "portfolio.contact"
+              ],
+              "where": [
+                "portfolio.contact"
+              ],
+              "find": [
+                "portfolio.contact"
+              ],
+              "info": [
+                "portfolio.contact"
+              ],
+              "social": [
+                "portfolio.contact"
+              ],
+              "media": [
+                "portfolio.contact"
+              ],
+              "get": [
+                "portfolio.contact"
+              ],
+              "touch": [
+                "portfolio.contact"
+              ],
+              "linkedin": [
+                "portfolio.contact"
+              ],
+              "github": [
+                "portfolio.contact"
+              ],
+              "want": [
+                "portfolio.contact",
+                "portfolio.more"
+              ],
+              "out": [
+                "portfolio.contact"
+              ],
+              "hi": [
+                "smalltalk.greet"
+              ],
+              "hello": [
+                "smalltalk.greet"
+              ],
+              "hey": [
+                "smalltalk.greet"
+              ],
+              "there": [
+                "smalltalk.greet"
+              ],
+              "more": [
+                "portfolio.more"
+              ],
+              "ask": [
+                "portfolio.more"
+              ],
+              "question": [
+                "portfolio.more"
+              ],
+              "help": [
+                "portfolio.more"
+              ],
+              "understand": [
+                "portfolio.more"
+              ],
+              "should": [
+                "portfolio.more"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "what",
+                "did",
+                "you",
+                "build",
+                "at",
+                "your",
+                "previous",
+                "compani",
+                "work",
+                "on",
+                "in",
+                "last",
+                "role",
+                "tell",
+                "me",
+                "about",
+                "experi",
+                "kind",
+                "of",
+                "project",
+                "do",
+                "befor",
+                "have",
+                "job",
+                "were",
+                "respons",
+                "career",
+                "histori",
+                "accomplish",
+                "show",
+                "and",
+                "portfolio",
+                "is",
+                "are",
+                "built",
+                "side",
+                "can",
+                "creat",
+                "creation",
+                "problem",
+                "like",
+                "to",
+                "type",
+                "challeng",
+                "interest",
+                "enjoy",
+                "solv",
+                "passion",
+                "motiv",
+                "technic",
+                "expertis",
+                "technolog",
+                "use",
+                "tech",
+                "stack",
+                "familiar",
+                "with",
+                "skill",
+                "program",
+                "languag",
+                "know",
+                "tool",
+                "framework",
+                "good",
+                "how",
+                "i",
+                "contact",
+                "inform",
+                "reach",
+                "email",
+                "give",
+                "detail",
+                "where",
+                "find",
+                "info",
+                "social",
+                "media",
+                "get",
+                "touch",
+                "linkedin",
+                "github",
+                "want",
+                "out",
+                "hi",
+                "hello",
+                "hey",
+                "there",
+                "more",
+                "ask",
+                "question",
+                "help",
+                "understand",
+                "should"
+              ],
+              "intents": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.problems",
+                "portfolio.tech",
+                "portfolio.contact",
+                "smalltalk.greet",
+                "portfolio.more"
+              ],
+              "perceptrons": [
+                [
+                  2.1346137523651123,
+                  7.615213394165039,
+                  -0.554368793964386,
+                  -2.3953988552093506,
+                  -2.463352918624878,
+                  -1.7472225427627563,
+                  13.996994018554688,
+                  -2.3953988552093506,
+                  5.687122821807861,
+                  3.2567319869995117,
+                  -3.723062753677368,
+                  0.7510830760002136,
+                  0.7510830760002136,
+                  -0.5604121685028076,
+                  -2.480771064758301,
+                  -0.8463099002838135,
+                  14.072260856628418,
+                  5.21707820892334,
+                  4.7548370361328125,
+                  -14.148591995239258,
+                  -1.8432914018630981,
+                  10.966320037841797,
+                  3.539005994796753,
+                  -1.7069607973098755,
+                  6.877054214477539,
+                  6.877054214477539,
+                  5.164914608001709,
+                  14.596302032470703,
+                  9.02820873260498,
+                  -1.9214553833007812,
+                  -3.5224688053131104,
+                  -5.4106855392456055,
+                  -2.3486242294311523,
+                  -2.114168882369995,
+                  -5.247828960418701,
+                  -0.4455146789550781,
+                  -1.3527334928512573,
+                  -5.231081008911133,
+                  -1.4340606927871704,
+                  -6.0023932456970215,
+                  -6.381383895874023,
+                  -6.381383895874023,
+                  -0.41131725907325745,
+                  -0.41131725907325745,
+                  -1.7235840559005737,
+                  -0.22458024322986603,
+                  -0.22458024322986603,
+                  -0.2770417034626007,
+                  -1.7021119594573975,
+                  -0.483368456363678,
+                  -0.35051172971725464,
+                  -0.5794522166252136,
+                  -0.7161206603050232,
+                  -0.28629356622695923,
+                  -0.28629356622695923,
+                  0,
+                  0,
+                  -3.390836715698242,
+                  -0.25155407190322876,
+                  -0.25155407190322876,
+                  -0.48447197675704956,
+                  -0.11765575408935547,
+                  -0.22778446972370148,
+                  -0.05417456105351448,
+                  0,
+                  -1.174011468887329,
+                  -0.10126274079084396,
+                  -0.10126274079084396,
+                  0,
+                  -0.6518257260322571,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.17613045871257782,
+                  -0.17613045871257782,
+                  0,
+                  0,
+                  -0.051030099391937256,
+                  -0.025608599185943604,
+                  0,
+                  0,
+                  -0.11239476501941681,
+                  -0.11233527213335037,
+                  -0.05647739768028259,
+                  -0.05647739768028259,
+                  0,
+                  -0.5363612174987793,
+                  0,
+                  0,
+                  0,
+                  -0.5363612174987793,
+                  0.11326794181971613
+                ],
+                [
+                  0.8305924534797668,
+                  -3.2832322120666504,
+                  2.106337070465088,
+                  -0.03206780180335045,
+                  -0.3916286528110504,
+                  3.5288634300231934,
+                  -14.992592811584473,
+                  -0.03206780180335045,
+                  6.673292636871338,
+                  -8.316426277160645,
+                  4.0786452293396,
+                  -2.977409839630127,
+                  -2.977409839630127,
+                  1.3244071006774902,
+                  0.7258853316307068,
+                  2.7165780067443848,
+                  -15.14792251586914,
+                  -1.3706952333450317,
+                  -2.58298921585083,
+                  6.94820499420166,
+                  -11.069615364074707,
+                  -0.23820707201957703,
+                  2.636935234069824,
+                  0,
+                  -2.155893087387085,
+                  -2.155893087387085,
+                  -0.7389933466911316,
+                  -12.68712043762207,
+                  -5.185995101928711,
+                  1.8473740816116333,
+                  13.897316932678223,
+                  5.099340915679932,
+                  0.9893909692764282,
+                  -6.174212455749512,
+                  7.169231414794922,
+                  8.869712829589844,
+                  7.929632186889648,
+                  8.277536392211914,
+                  5.5707783699035645,
+                  -1.7515264749526978,
+                  -1.732531189918518,
+                  -1.732531189918518,
+                  -0.9942919611930847,
+                  -0.9942919611930847,
+                  -3.3269567489624023,
+                  -0.6313493847846985,
+                  -0.6313493847846985,
+                  -2.9126851558685303,
+                  -3.331328868865967,
+                  -4.875978469848633,
+                  -4.462006568908691,
+                  -0.47352975606918335,
+                  -0.04354226961731911,
+                  -2.880009651184082,
+                  -2.880009651184082,
+                  -0.41251036524772644,
+                  -0.41251036524772644,
+                  -9.458029747009277,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.3453848361968994,
+                  -1.6223931312561035,
+                  -8.531294822692871,
+                  -5.168989658355713,
+                  -0.6090081334114075,
+                  -0.2773980498313904,
+                  -5.895381450653076,
+                  -1.013447642326355,
+                  -1.013447642326355,
+                  -0.9425386190414429,
+                  -0.9425386190414429,
+                  -3.314337730407715,
+                  -0.6607508063316345,
+                  -0.6607508063316345,
+                  -1.3444777727127075,
+                  -1.3444777727127075,
+                  -5.716753005981445,
+                  -5.707875728607178,
+                  0,
+                  0,
+                  -0.32683897018432617,
+                  -0.3244090676307678,
+                  -0.1771644502878189,
+                  -0.1771644502878189,
+                  -4.306667327880859,
+                  -2.687847375869751,
+                  -0.0727960616350174,
+                  -1.3198785781860352,
+                  -1.3198785781860352,
+                  0,
+                  0.3767872084932848
+                ],
+                [
+                  3.444693088531494,
+                  -2.4275310039520264,
+                  2.85532283782959,
+                  0,
+                  -3.0783090591430664,
+                  -3.395195484161377,
+                  -0.014285780489444733,
+                  0,
+                  0.05012456700205803,
+                  0.17229530215263367,
+                  -0.4965932071208954,
+                  -1.3270400762557983,
+                  -1.3270400762557983,
+                  -0.3977932929992676,
+                  -1.3076438903808594,
+                  3.9328832626342773,
+                  -0.0934811607003212,
+                  -1.872519612312317,
+                  -0.9353230595588684,
+                  -1.6371815204620361,
+                  -2.1913461685180664,
+                  -0.9742599725723267,
+                  -6.683498382568359,
+                  0,
+                  -0.1052919402718544,
+                  -0.1052919402718544,
+                  0,
+                  0,
+                  -0.2739306688308716,
+                  -0.9062943458557129,
+                  0,
+                  -0.003967537544667721,
+                  -0.6583220958709717,
+                  -0.4424836337566376,
+                  -0.14568321406841278,
+                  0,
+                  -4.2697319984436035,
+                  -0.020319409668445587,
+                  0,
+                  2.8078460693359375,
+                  5.862292766571045,
+                  3.931265354156494,
+                  0.9371978044509888,
+                  0.9371978044509888,
+                  7.824638366699219,
+                  3.604066848754883,
+                  3.604066848754883,
+                  4.334235191345215,
+                  7.824631214141846,
+                  -0.6663139462471008,
+                  -0.19328546524047852,
+                  -3.848733425140381,
+                  -3.12931752204895,
+                  -0.6583220958709717,
+                  -0.6583220958709717,
+                  -1.8169128894805908,
+                  -1.8169128894805908,
+                  -2.2960097789764404,
+                  -1.4374990463256836,
+                  -1.4374990463256836,
+                  -2.9510931968688965,
+                  -1.1434365510940552,
+                  -1.3196638822555542,
+                  -3.0783090591430664,
+                  -0.2688943147659302,
+                  -2.931295871734619,
+                  -2.0853323936462402,
+                  0,
+                  -0.09301812946796417,
+                  0,
+                  0,
+                  0,
+                  -0.07414238154888153,
+                  -0.07414238154888153,
+                  0,
+                  -0.18755194544792175,
+                  -0.18755194544792175,
+                  -0.010965985246002674,
+                  -0.010965985246002674,
+                  0,
+                  0,
+                  -1.931024432182312,
+                  0,
+                  -0.16357050836086273,
+                  -0.16254214942455292,
+                  -0.09371224045753479,
+                  -0.09371224045753479,
+                  0,
+                  -0.6292856931686401,
+                  0,
+                  0,
+                  0,
+                  -0.10156352072954178,
+                  0.1610639875283276
+                ],
+                [
+                  -0.3452068567276001,
+                  -4.131592750549316,
+                  1.3185750246047974,
+                  -0.6435398459434509,
+                  5.7429914474487305,
+                  -0.2040955275297165,
+                  -2.1761488914489746,
+                  -0.6435398459434509,
+                  -4.233795642852783,
+                  -2.6829185485839844,
+                  -2.1388940811157227,
+                  -0.2568669021129608,
+                  -0.2568669021129608,
+                  4.013111114501953,
+                  -1.1980410814285278,
+                  2.1600077152252197,
+                  -1.2589794397354126,
+                  -1.7482662200927734,
+                  -2.47544527053833,
+                  -2.5734548568725586,
+                  8.646565437316895,
+                  -1.6073789596557617,
+                  -4.840339660644531,
+                  -1.0557631254196167,
+                  -0.3285229802131653,
+                  -0.3285229802131653,
+                  -2.1173627376556396,
+                  -2.1173627376556396,
+                  -1.3522226810455322,
+                  -4.43608283996582,
+                  -0.40277764201164246,
+                  -4.234210014343262,
+                  1.6622792482376099,
+                  1.5119801759719849,
+                  -1.5595686435699463,
+                  -0.29250890016555786,
+                  5.197976589202881,
+                  -0.6612840294837952,
+                  -4.232781410217285,
+                  -3.1189932823181152,
+                  -1.356022834777832,
+                  -1.4861434698104858,
+                  -0.5417717099189758,
+                  -0.5417717099189758,
+                  -1.233704924583435,
+                  -3.00221586227417,
+                  -3.00221586227417,
+                  -4.1318793296813965,
+                  -0.9844260215759277,
+                  3.81571888923645,
+                  6.2354416847229,
+                  3.2487828731536865,
+                  1.9536185264587402,
+                  6.854253768920898,
+                  6.854253768920898,
+                  4.54348087310791,
+                  4.54348087310791,
+                  10.04530143737793,
+                  1.0403494834899902,
+                  1.0403494834899902,
+                  3.121367931365967,
+                  3.2483255863189697,
+                  2.08101749420166,
+                  6.593191146850586,
+                  -1.8914077281951904,
+                  -4.259346008300781,
+                  -2.1913058757781982,
+                  -0.761775553226471,
+                  -1.331100583076477,
+                  -1.5060408115386963,
+                  -0.19386586546897888,
+                  -0.19386586546897888,
+                  -0.8604835867881775,
+                  -0.8604835867881775,
+                  -0.1404235064983368,
+                  -2.032186508178711,
+                  -2.032186508178711,
+                  0,
+                  0,
+                  -1.3088990449905396,
+                  -1.2389036417007446,
+                  -0.08549629896879196,
+                  -0.8181969523429871,
+                  -0.27227547764778137,
+                  -0.2839865982532501,
+                  -0.2280266135931015,
+                  -0.2280266135931015,
+                  -2.278991222381592,
+                  -1.3759188652038574,
+                  0,
+                  -0.43046316504478455,
+                  -0.43046316504478455,
+                  -0.09531288594007492,
+                  -0.5357056805839433
+                ],
+                [
+                  -2.7457077503204346,
+                  -2.6315195560455322,
+                  0.5561776161193848,
+                  -0.9959535598754883,
+                  -0.9959535598754883,
+                  4.0252556800842285,
+                  -1.988702654838562,
+                  -0.9959535598754883,
+                  -4.462433338165283,
+                  -0.5998967885971069,
+                  -2.358262062072754,
+                  -0.5998967885971069,
+                  -0.5998967885971069,
+                  -2.2979393005371094,
+                  -0.6764606833457947,
+                  -1.9087835550308228,
+                  -0.7261985540390015,
+                  -0.036397192627191544,
+                  -0.036397192627191544,
+                  -2.7112767696380615,
+                  -0.04891964793205261,
+                  -0.036397192627191544,
+                  -0.4371557831764221,
+                  -0.4677117168903351,
+                  -1.7458537817001343,
+                  -1.7458537817001343,
+                  -0.5104801058769226,
+                  -1.441834807395935,
+                  -0.2171325385570526,
+                  -0.030005021020770073,
+                  -0.057920943945646286,
+                  -6.579012393951416,
+                  6.513862609863281,
+                  1.3936479091644287,
+                  0,
+                  -1.7046931982040405,
+                  0.4999244809150696,
+                  0,
+                  -0.2861107587814331,
+                  0,
+                  0,
+                  1.717726707458496,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1.9371119737625122,
+                  0,
+                  -0.1488693803548813,
+                  0,
+                  -4.493558406829834,
+                  -4.493558406829834,
+                  -0.1488693803548813,
+                  -0.1488693803548813,
+                  -1.9371119737625122,
+                  0,
+                  0,
+                  -3.947108745574951,
+                  0,
+                  0,
+                  0,
+                  2.940620183944702,
+                  3.7042205333709717,
+                  5.444528102874756,
+                  -0.09719586372375488,
+                  5.4383697509765625,
+                  5.348947525024414,
+                  2.1740996837615967,
+                  2.1740996837615967,
+                  4.190770149230957,
+                  4.190770149230957,
+                  4.377838611602783,
+                  5.234186172485352,
+                  5.234186172485352,
+                  4.177354335784912,
+                  4.177354335784912,
+                  5.34807014465332,
+                  5.348079204559326,
+                  1.717726707458496,
+                  1.107681393623352,
+                  -1.2528607845306396,
+                  -1.240679383277893,
+                  -0.7718923687934875,
+                  -0.7718923687934875,
+                  -4.336266994476318,
+                  -4.891673564910889,
+                  -1.3342078924179077,
+                  -0.4626586139202118,
+                  -0.4626586139202118,
+                  -0.3514679968357086,
+                  1.144245369144108
+                ],
+                [
+                  -3.3688228130340576,
+                  -0.2489016056060791,
+                  -2.2178964614868164,
+                  -0.06982666254043579,
+                  -0.11663130670785904,
+                  -2.079606533050537,
+                  -0.12287365645170212,
+                  -0.06982666254043579,
+                  -0.42333266139030457,
+                  -0.15348811447620392,
+                  -0.5757347941398621,
+                  -0.04358059912919998,
+                  -0.04358059912919998,
+                  -1.1908332109451294,
+                  -3.2171339988708496,
+                  -0.25000086426734924,
+                  -0.09373157471418381,
+                  -0.08069653809070587,
+                  -0.12226972728967667,
+                  -0.29459574818611145,
+                  -0.9020777940750122,
+                  -0.08069653809070587,
+                  -0.5112285017967224,
+                  0,
+                  -0.30785560607910156,
+                  -0.30785560607910156,
+                  -0.051856882870197296,
+                  -0.14908406138420105,
+                  -0.17618879675865173,
+                  -0.40431082248687744,
+                  -0.00023370432609226555,
+                  -0.34646889567375183,
+                  -0.48696914315223694,
+                  -0.3918420076370239,
+                  -0.12029429525136948,
+                  -0.07234320044517517,
+                  -0.944105863571167,
+                  -0.08337453752756119,
+                  0,
+                  -0.0538363978266716,
+                  0,
+                  -0.6432404518127441,
+                  -0.014983326196670532,
+                  -0.014983326196670532,
+                  -0.43930983543395996,
+                  -0.0538363978266716,
+                  -0.0538363978266716,
+                  -0.032120753079652786,
+                  -0.43726566433906555,
+                  -0.09330325573682785,
+                  0,
+                  -0.05787043273448944,
+                  -0.0019892635755240917,
+                  -0.10660430788993835,
+                  -0.10660430788993835,
+                  -0.055143069475889206,
+                  -0.055143069475889206,
+                  -0.09330325573682785,
+                  0,
+                  0,
+                  -0.6432404518127441,
+                  0,
+                  0,
+                  -0.009318097494542599,
+                  -1.185285210609436,
+                  -2.4782462120056152,
+                  -0.29010581970214844,
+                  -0.005787092726677656,
+                  -0.7333540916442871,
+                  -0.11622175574302673,
+                  -0.2185693383216858,
+                  -0.2185693383216858,
+                  -0.19186824560165405,
+                  -0.19186824560165405,
+                  -0.03282780572772026,
+                  -0.09185685217380524,
+                  -0.09185685217380524,
+                  -0.42030641436576843,
+                  -0.42030641436576843,
+                  -0.08969125896692276,
+                  -0.0885864719748497,
+                  -0.6432404518127441,
+                  -0.725021481513977,
+                  8.261725425720215,
+                  8.261726379394531,
+                  4.130866050720215,
+                  4.130866050720215,
+                  -1.61601722240448,
+                  -0.4415714144706726,
+                  -0.11491747200489044,
+                  -1.4034252166748047,
+                  -1.4034252166748047,
+                  -0.14945219457149506,
+                  6.023985139684226
+                ],
+                [
+                  1.269723653793335,
+                  -1.0094413757324219,
+                  -1.774896502494812,
+                  -0.21340146660804749,
+                  -0.21340146660804749,
+                  -4.247170925140381,
+                  -0.6323009133338928,
+                  -0.21340146660804749,
+                  -1.2468746900558472,
+                  -0.42735663056373596,
+                  -1.370277762413025,
+                  -0.19549846649169922,
+                  -0.19549846649169922,
+                  2.675016164779663,
+                  3.3046040534973145,
+                  -2.502070665359497,
+                  -0.5316445231437683,
+                  -0.16572140157222748,
+                  -0.25850141048431396,
+                  -0.6061657667160034,
+                  -1.572745442390442,
+                  -0.16572140157222748,
+                  -1.4209874868392944,
+                  -0.018609197810292244,
+                  -0.22914470732212067,
+                  -0.22914470732212067,
+                  -0.4388844072818756,
+                  -0.4739849269390106,
+                  -0.1994236707687378,
+                  -4.518428802490234,
+                  -0.16366569697856903,
+                  -0.6087344884872437,
+                  -0.019561411812901497,
+                  -0.05971352010965347,
+                  -0.518520176410675,
+                  0,
+                  1.0350513458251953,
+                  0,
+                  -0.3431008756160736,
+                  -0.025458669289946556,
+                  0,
+                  0.06859556585550308,
+                  -0.00991930440068245,
+                  -0.00991930440068245,
+                  -0.17920397222042084,
+                  -0.025458669289946556,
+                  -0.025458669289946556,
+                  0,
+                  -0.17914670705795288,
+                  -0.1941513866186142,
+                  -0.1941513866186142,
+                  -0.039874911308288574,
+                  0,
+                  0,
+                  0,
+                  -0.039874911308288574,
+                  -0.039874911308288574,
+                  -0.2644798159599304,
+                  -0.20999814569950104,
+                  -0.20999814569950104,
+                  1.8134394884109497,
+                  0,
+                  -0.41983282566070557,
+                  0,
+                  -2.8117494583129883,
+                  4.028800010681152,
+                  -3.0749764442443848,
+                  0,
+                  -1.1612548828125,
+                  -0.2441098392009735,
+                  0,
+                  0,
+                  -1.9864264726638794,
+                  -1.9864264726638794,
+                  0,
+                  0,
+                  0,
+                  -0.888052761554718,
+                  -0.888052761554718,
+                  0,
+                  0,
+                  0.06859556585550308,
+                  -0.33713799715042114,
+                  -0.9392960071563721,
+                  -0.9292717576026917,
+                  -0.5445414781570435,
+                  -0.5445414781570435,
+                  7.6214423179626465,
+                  9.038885116577148,
+                  -1.7698897123336792,
+                  5.148044109344482,
+                  5.148044109344482,
+                  -0.7355499267578125,
+                  0.6846481024461776
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "id": {
+        "settings": {
+          "locale": "id",
+          "trainByDomain": false,
+          "tag": "domain-manager-id",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "anda,apa,projek,rjakan,saja,yang": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "apa,kamu,projek,rjakan,saja,yang": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "alam,cerita,kamu,kerja": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "alam,apa,kamu,kerja,saja": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "apa,bangun,di,kamu,kerja,saja,sebelum,sudah,tempat,yang": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "cerita,kamu,kerja,sebelum": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "apa,kamu,pernah,rjakan,saja,yang": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "apa,jawab,kamu,saja,tanggung": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "bagaimana,kamu,karir,riwayat": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "apa,capai,kamu,saja": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "kamu,kerja,riwayat,tunjuk": {
+            "intent": "portfolio.experience",
+            "domain": "default"
+          },
+          "apa,buat,kamu,pernah,projek,saja,yang": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "cerita,kamu,pernah,projek,rjakan,yang": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "apa,di,kamu,portofolio,projek,saja": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "ada,apa,di,kamu,portofolio,saja,yang": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "kamu,portofolio,tunjuk": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "apa,di,portofolio,projek,saja": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "cerita,kamu,portofolio,tentang": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "apa,buat,kamu,saja,sudah,yang": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "apa,buat,kamu,sudah,tunjuk,yang": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "apa,kamu,projek,saja,samping": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "cerita,kamu,kerja": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "apa,bisa,kamu,tunjuk,yang": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "kamu,kerja,tunjuk": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "apa,cipta,kamu,saja,sudah,yang": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "cerita,kamu,kreasi": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "apa,isi,kamu,portofolio": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "apa,kamu,pernah,projek,rjakan,saja,yang": {
+            "intent": "portfolio.projects",
+            "domain": "default"
+          },
+          "apa,erja,kamu,masa,sepert,suka": {
+            "intent": "portfolio.problems",
+            "domain": "default"
+          },
+          "apa,kamu,minat,sepert,tantang,yang": {
+            "intent": "portfolio.problems",
+            "domain": "default"
+          },
+          "apa,ikmat,kamu,masa,selesai,sepert": {
+            "intent": "portfolio.problems",
+            "domain": "default"
+          },
+          "apa,erja,kamu,suka": {
+            "intent": "portfolio.problems",
+            "domain": "default"
+          },
+          "apa,arik,kamu,minat,yang": {
+            "intent": "portfolio.problems",
+            "domain": "default"
+          },
+          "apa,buat,kamu,semangat,yang": {
+            "intent": "portfolio.problems",
+            "domain": "default"
+          },
+          "apa,kamu,potivasi,yang": {
+            "intent": "portfolio.problems",
+            "domain": "default"
+          },
+          "cerita,kamu,mampu,teknis": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "apa,biasa,kamu,paka,saja,teknolog": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "apa,kamu,saja,stack,tech": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "apa,kamu,kuasa,saja,teknolog,yang": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "apa,kamu,saja,skill": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "apa,kamu,mampu,saja,teknis": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "cerita,kamu,skill": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "apa,bahasa,kamu,kuasa,rogram,yang": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "apa,kamu,paka,saja,tools,yang": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "apa,framework,kamu,saja,tahu,yang": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "apa,jago,kamu": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "apa,bisa,kamu": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "apa,guna,kamu,saja,teknolog,yang": {
+            "intent": "portfolio.tech",
+            "domain": "default"
+          },
+          "bagaimana,cara,hubung,kamu": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "apa,informasi,kamu,kontak": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "apa,email,kamu": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "detail,ikan,kamu,kontak": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "bisa,emu,kamu,mana,saya": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "informasi,kamu,kontak,tunjuk": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "apa,dia,kamu,social": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "apa,kamu,linkedin": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "apa,github,kamu": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "bisa,email,kamu,kasih": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "hubung,ingin,kamu,saya": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "bagaimana,cara,hubung": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "apa,kamu,kontak": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "apa,kamu,link,linkedin": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "apa,github,kamu,link": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "kamu,kontak,mau,saya": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "bagaimana,cara,kamu,kontak": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "kamu,kontak,mana": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "kamu,kontak,perlu,saya": {
+            "intent": "portfolio.contact",
+            "domain": "default"
+          },
+          "halo": {
+            "intent": "smalltalk.greet",
+            "domain": "default"
+          },
+          "hai": {
+            "intent": "smalltalk.greet",
+            "domain": "default"
+          },
+          "pagi,selamat": {
+            "intent": "smalltalk.greet",
+            "domain": "default"
+          },
+          "selamat,siang": {
+            "intent": "smalltalk.greet",
+            "domain": "default"
+          },
+          "malam,selamat": {
+            "intent": "smalltalk.greet",
+            "domain": "default"
+          },
+          "banyak,ingin,lebih,saya,tahu": {
+            "intent": "portfolio.more",
+            "domain": "default"
+          },
+          "banyak,cerita,lebih": {
+            "intent": "portfolio.more",
+            "domain": "default"
+          },
+          "apa,bisa,saya,tanya,yang": {
+            "intent": "portfolio.more",
+            "domain": "default"
+          },
+          "aju,apa,bisa,saya,tanya,yang": {
+            "intent": "portfolio.more",
+            "domain": "default"
+          },
+          "bantu,paham,saya": {
+            "intent": "portfolio.more",
+            "domain": "default"
+          },
+          "apa,harus,saya,tanya,yang": {
+            "intent": "portfolio.more",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "portfolio.experience": "default",
+          "portfolio.projects": "default",
+          "portfolio.problems": "default",
+          "portfolio.tech": "default",
+          "portfolio.contact": "default",
+          "smalltalk.greet": "default",
+          "portfolio.more": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "projek apa saja yang anda kerjakan?",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "projek apa saja yang kamu kerjakan?",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "ceritakan pengalaman kerja kamu",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "pengalaman kerja kamu apa saja?",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa saja yang sudah kamu bangun di tempat kerja sebelumnya?",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "ceritakan pekerjaan kamu sebelumnya",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa saja yang pernah kamu kerjakan?",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "tanggung jawab kamu apa saja?",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "riwayat karir kamu bagaimana?",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa saja pencapaian kamu?",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "tunjukkan riwayat kerja kamu",
+            "intent": "portfolio.experience"
+          },
+          {
+            "domain": "default",
+            "utterance": "projek apa saja yang pernah kamu buat?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "ceritakan projek yang pernah kamu kerjakan",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "projek apa saja di portofolio kamu?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa saja yang ada di portofolio kamu?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "tunjukkan portofolio kamu",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "projek apa saja di portofolio?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "ceritakan tentang portofolio kamu",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa saja yang sudah kamu buat?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "tunjukkan apa yang sudah kamu buat",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "projek sampingan kamu apa saja?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "ceritakan pekerjaan kamu",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa yang bisa kamu tunjukkan?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "tunjukkan pekerjaan kamu",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa saja yang sudah kamu ciptakan?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "ceritakan kreasi kamu",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "portofolio kamu berisi apa?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "projek yang pernah kamu kerjakan apa saja?",
+            "intent": "portfolio.projects"
+          },
+          {
+            "domain": "default",
+            "utterance": "kamu suka mengerjakan masalah seperti apa?",
+            "intent": "portfolio.problems"
+          },
+          {
+            "domain": "default",
+            "utterance": "tantangan seperti apa yang kamu minati?",
+            "intent": "portfolio.problems"
+          },
+          {
+            "domain": "default",
+            "utterance": "kamu menikmati menyelesaikan masalah seperti apa?",
+            "intent": "portfolio.problems"
+          },
+          {
+            "domain": "default",
+            "utterance": "kamu suka mengerjakan apa?",
+            "intent": "portfolio.problems"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa yang menarik minat kamu?",
+            "intent": "portfolio.problems"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa yang membuat kamu semangat?",
+            "intent": "portfolio.problems"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa yang memotivasi kamu?",
+            "intent": "portfolio.problems"
+          },
+          {
+            "domain": "default",
+            "utterance": "ceritakan kemampuan teknis kamu",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "kamu biasa pakai teknologi apa saja?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "tech stack kamu apa saja?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "teknologi apa saja yang kamu kuasai?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "skill kamu apa saja?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "kemampuan teknis kamu apa saja?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "ceritakan skill kamu",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "bahasa pemrograman apa yang kamu kuasai?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "tools apa saja yang kamu pakai?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "framework apa saja yang kamu tahu?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "kamu jago apa?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "kamu bisa apa?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "teknologi yang kamu gunakan apa saja?",
+            "intent": "portfolio.tech"
+          },
+          {
+            "domain": "default",
+            "utterance": "bagaimana cara menghubungi kamu?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa informasi kontak kamu?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa email kamu?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "berikan detail kontak kamu",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "dimana saya bisa menemukan kamu?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "tunjukkan informasi kontak kamu",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa social media kamu?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa LinkedIn kamu?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa GitHub kamu?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "bisa kasih email kamu?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "saya ingin menghubungi kamu",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "bagaimana cara menghubungi?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "kontak kamu apa?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "cara menghubungi kamu bagaimana?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "email kamu apa?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "link LinkedIn kamu apa?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "link GitHub kamu apa?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "saya mau kontak kamu",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "cara kontak kamu bagaimana?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "kontak kamu dimana?",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "saya perlu kontak kamu",
+            "intent": "portfolio.contact"
+          },
+          {
+            "domain": "default",
+            "utterance": "halo",
+            "intent": "smalltalk.greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "hai",
+            "intent": "smalltalk.greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "selamat pagi",
+            "intent": "smalltalk.greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "selamat siang",
+            "intent": "smalltalk.greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "selamat malam",
+            "intent": "smalltalk.greet"
+          },
+          {
+            "domain": "default",
+            "utterance": "saya ingin tahu lebih banyak",
+            "intent": "portfolio.more"
+          },
+          {
+            "domain": "default",
+            "utterance": "ceritakan lebih banyak",
+            "intent": "portfolio.more"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa yang bisa saya tanya?",
+            "intent": "portfolio.more"
+          },
+          {
+            "domain": "default",
+            "utterance": "pertanyaan apa yang bisa saya ajukan?",
+            "intent": "portfolio.more"
+          },
+          {
+            "domain": "default",
+            "utterance": "bantu saya memahami",
+            "intent": "portfolio.more"
+          },
+          {
+            "domain": "default",
+            "utterance": "apa yang harus saya tanya?",
+            "intent": "portfolio.more"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "id",
+              "tag": "nlu-id",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "projek": 1,
+              "apa": 1,
+              "saja": 1,
+              "yang": 1,
+              "anda": 1,
+              "rjakan": 1,
+              "kamu": 1,
+              "cerita": 1,
+              "alam": 1,
+              "kerja": 1,
+              "sudah": 1,
+              "bangun": 1,
+              "di": 1,
+              "tempat": 1,
+              "sebelum": 1,
+              "pernah": 1,
+              "tanggung": 1,
+              "jawab": 1,
+              "riwayat": 1,
+              "karir": 1,
+              "bagaimana": 1,
+              "capai": 1,
+              "tunjuk": 1,
+              "buat": 1,
+              "portofolio": 1,
+              "ada": 1,
+              "tentang": 1,
+              "samping": 1,
+              "bisa": 1,
+              "cipta": 1,
+              "kreasi": 1,
+              "isi": 1,
+              "suka": 1,
+              "erja": 1,
+              "masa": 1,
+              "sepert": 1,
+              "tantang": 1,
+              "minat": 1,
+              "ikmat": 1,
+              "selesai": 1,
+              "arik": 1,
+              "semangat": 1,
+              "potivasi": 1,
+              "mampu": 1,
+              "teknis": 1,
+              "biasa": 1,
+              "paka": 1,
+              "teknolog": 1,
+              "tech": 1,
+              "stack": 1,
+              "kuasa": 1,
+              "skill": 1,
+              "bahasa": 1,
+              "rogram": 1,
+              "tools": 1,
+              "framework": 1,
+              "tahu": 1,
+              "jago": 1,
+              "guna": 1,
+              "cara": 1,
+              "hubung": 1,
+              "informasi": 1,
+              "kontak": 1,
+              "email": 1,
+              "ikan": 1,
+              "detail": 1,
+              "mana": 1,
+              "saya": 1,
+              "emu": 1,
+              "social": 1,
+              "dia": 1,
+              "linkedin": 1,
+              "github": 1,
+              "kasih": 1,
+              "ingin": 1,
+              "link": 1,
+              "mau": 1,
+              "perlu": 1,
+              "halo": 1,
+              "hai": 1,
+              "selamat": 1,
+              "pagi": 1,
+              "siang": 1,
+              "malam": 1,
+              "lebih": 1,
+              "banyak": 1,
+              "tanya": 1,
+              "aju": 1,
+              "bantu": 1,
+              "paham": 1,
+              "harus": 1
+            },
+            "intents": {
+              "portfolio.experience": 1,
+              "portfolio.projects": 1,
+              "portfolio.problems": 1,
+              "portfolio.tech": 1,
+              "portfolio.contact": 1,
+              "smalltalk.greet": 1,
+              "portfolio.more": 1
+            },
+            "intentFeatures": {
+              "portfolio.experience": {
+                "projek": 1,
+                "apa": 1,
+                "saja": 1,
+                "yang": 1,
+                "anda": 1,
+                "rjakan": 1,
+                "kamu": 1,
+                "cerita": 1,
+                "alam": 1,
+                "kerja": 1,
+                "sudah": 1,
+                "bangun": 1,
+                "di": 1,
+                "tempat": 1,
+                "sebelum": 1,
+                "pernah": 1,
+                "tanggung": 1,
+                "jawab": 1,
+                "riwayat": 1,
+                "karir": 1,
+                "bagaimana": 1,
+                "capai": 1,
+                "tunjuk": 1
+              },
+              "portfolio.projects": {
+                "projek": 1,
+                "apa": 1,
+                "saja": 1,
+                "yang": 1,
+                "pernah": 1,
+                "kamu": 1,
+                "buat": 1,
+                "cerita": 1,
+                "rjakan": 1,
+                "di": 1,
+                "portofolio": 1,
+                "ada": 1,
+                "tunjuk": 1,
+                "tentang": 1,
+                "sudah": 1,
+                "samping": 1,
+                "kerja": 1,
+                "bisa": 1,
+                "cipta": 1,
+                "kreasi": 1,
+                "isi": 1
+              },
+              "portfolio.problems": {
+                "kamu": 1,
+                "suka": 1,
+                "erja": 1,
+                "masa": 1,
+                "sepert": 1,
+                "apa": 1,
+                "tantang": 1,
+                "yang": 1,
+                "minat": 1,
+                "ikmat": 1,
+                "selesai": 1,
+                "arik": 1,
+                "buat": 1,
+                "semangat": 1,
+                "potivasi": 1
+              },
+              "portfolio.tech": {
+                "cerita": 1,
+                "mampu": 1,
+                "teknis": 1,
+                "kamu": 1,
+                "biasa": 1,
+                "paka": 1,
+                "teknolog": 1,
+                "apa": 1,
+                "saja": 1,
+                "tech": 1,
+                "stack": 1,
+                "yang": 1,
+                "kuasa": 1,
+                "skill": 1,
+                "bahasa": 1,
+                "rogram": 1,
+                "tools": 1,
+                "framework": 1,
+                "tahu": 1,
+                "jago": 1,
+                "bisa": 1,
+                "guna": 1
+              },
+              "portfolio.contact": {
+                "bagaimana": 1,
+                "cara": 1,
+                "hubung": 1,
+                "kamu": 1,
+                "apa": 1,
+                "informasi": 1,
+                "kontak": 1,
+                "email": 1,
+                "ikan": 1,
+                "detail": 1,
+                "mana": 1,
+                "saya": 1,
+                "bisa": 1,
+                "emu": 1,
+                "tunjuk": 1,
+                "social": 1,
+                "dia": 1,
+                "linkedin": 1,
+                "github": 1,
+                "kasih": 1,
+                "ingin": 1,
+                "link": 1,
+                "mau": 1,
+                "perlu": 1
+              },
+              "smalltalk.greet": {
+                "halo": 1,
+                "hai": 1,
+                "selamat": 1,
+                "pagi": 1,
+                "siang": 1,
+                "malam": 1
+              },
+              "portfolio.more": {
+                "saya": 1,
+                "ingin": 1,
+                "tahu": 1,
+                "lebih": 1,
+                "banyak": 1,
+                "cerita": 1,
+                "apa": 1,
+                "yang": 1,
+                "bisa": 1,
+                "tanya": 1,
+                "aju": 1,
+                "bantu": 1,
+                "paham": 1,
+                "harus": 1
+              }
+            },
+            "featuresToIntent": {
+              "projek": [
+                "portfolio.experience",
+                "portfolio.projects"
+              ],
+              "apa": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.problems",
+                "portfolio.tech",
+                "portfolio.contact",
+                "portfolio.more"
+              ],
+              "saja": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.tech"
+              ],
+              "yang": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.problems",
+                "portfolio.tech",
+                "portfolio.more"
+              ],
+              "anda": [
+                "portfolio.experience"
+              ],
+              "rjakan": [
+                "portfolio.experience",
+                "portfolio.projects"
+              ],
+              "kamu": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.problems",
+                "portfolio.tech",
+                "portfolio.contact"
+              ],
+              "cerita": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.tech",
+                "portfolio.more"
+              ],
+              "alam": [
+                "portfolio.experience"
+              ],
+              "kerja": [
+                "portfolio.experience",
+                "portfolio.projects"
+              ],
+              "sudah": [
+                "portfolio.experience",
+                "portfolio.projects"
+              ],
+              "bangun": [
+                "portfolio.experience"
+              ],
+              "di": [
+                "portfolio.experience",
+                "portfolio.projects"
+              ],
+              "tempat": [
+                "portfolio.experience"
+              ],
+              "sebelum": [
+                "portfolio.experience"
+              ],
+              "pernah": [
+                "portfolio.experience",
+                "portfolio.projects"
+              ],
+              "tanggung": [
+                "portfolio.experience"
+              ],
+              "jawab": [
+                "portfolio.experience"
+              ],
+              "riwayat": [
+                "portfolio.experience"
+              ],
+              "karir": [
+                "portfolio.experience"
+              ],
+              "bagaimana": [
+                "portfolio.experience",
+                "portfolio.contact"
+              ],
+              "capai": [
+                "portfolio.experience"
+              ],
+              "tunjuk": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.contact"
+              ],
+              "buat": [
+                "portfolio.projects",
+                "portfolio.problems"
+              ],
+              "portofolio": [
+                "portfolio.projects"
+              ],
+              "ada": [
+                "portfolio.projects"
+              ],
+              "tentang": [
+                "portfolio.projects"
+              ],
+              "samping": [
+                "portfolio.projects"
+              ],
+              "bisa": [
+                "portfolio.projects",
+                "portfolio.tech",
+                "portfolio.contact",
+                "portfolio.more"
+              ],
+              "cipta": [
+                "portfolio.projects"
+              ],
+              "kreasi": [
+                "portfolio.projects"
+              ],
+              "isi": [
+                "portfolio.projects"
+              ],
+              "suka": [
+                "portfolio.problems"
+              ],
+              "erja": [
+                "portfolio.problems"
+              ],
+              "masa": [
+                "portfolio.problems"
+              ],
+              "sepert": [
+                "portfolio.problems"
+              ],
+              "tantang": [
+                "portfolio.problems"
+              ],
+              "minat": [
+                "portfolio.problems"
+              ],
+              "ikmat": [
+                "portfolio.problems"
+              ],
+              "selesai": [
+                "portfolio.problems"
+              ],
+              "arik": [
+                "portfolio.problems"
+              ],
+              "semangat": [
+                "portfolio.problems"
+              ],
+              "potivasi": [
+                "portfolio.problems"
+              ],
+              "mampu": [
+                "portfolio.tech"
+              ],
+              "teknis": [
+                "portfolio.tech"
+              ],
+              "biasa": [
+                "portfolio.tech"
+              ],
+              "paka": [
+                "portfolio.tech"
+              ],
+              "teknolog": [
+                "portfolio.tech"
+              ],
+              "tech": [
+                "portfolio.tech"
+              ],
+              "stack": [
+                "portfolio.tech"
+              ],
+              "kuasa": [
+                "portfolio.tech"
+              ],
+              "skill": [
+                "portfolio.tech"
+              ],
+              "bahasa": [
+                "portfolio.tech"
+              ],
+              "rogram": [
+                "portfolio.tech"
+              ],
+              "tools": [
+                "portfolio.tech"
+              ],
+              "framework": [
+                "portfolio.tech"
+              ],
+              "tahu": [
+                "portfolio.tech",
+                "portfolio.more"
+              ],
+              "jago": [
+                "portfolio.tech"
+              ],
+              "guna": [
+                "portfolio.tech"
+              ],
+              "cara": [
+                "portfolio.contact"
+              ],
+              "hubung": [
+                "portfolio.contact"
+              ],
+              "informasi": [
+                "portfolio.contact"
+              ],
+              "kontak": [
+                "portfolio.contact"
+              ],
+              "email": [
+                "portfolio.contact"
+              ],
+              "ikan": [
+                "portfolio.contact"
+              ],
+              "detail": [
+                "portfolio.contact"
+              ],
+              "mana": [
+                "portfolio.contact"
+              ],
+              "saya": [
+                "portfolio.contact",
+                "portfolio.more"
+              ],
+              "emu": [
+                "portfolio.contact"
+              ],
+              "social": [
+                "portfolio.contact"
+              ],
+              "dia": [
+                "portfolio.contact"
+              ],
+              "linkedin": [
+                "portfolio.contact"
+              ],
+              "github": [
+                "portfolio.contact"
+              ],
+              "kasih": [
+                "portfolio.contact"
+              ],
+              "ingin": [
+                "portfolio.contact",
+                "portfolio.more"
+              ],
+              "link": [
+                "portfolio.contact"
+              ],
+              "mau": [
+                "portfolio.contact"
+              ],
+              "perlu": [
+                "portfolio.contact"
+              ],
+              "halo": [
+                "smalltalk.greet"
+              ],
+              "hai": [
+                "smalltalk.greet"
+              ],
+              "selamat": [
+                "smalltalk.greet"
+              ],
+              "pagi": [
+                "smalltalk.greet"
+              ],
+              "siang": [
+                "smalltalk.greet"
+              ],
+              "malam": [
+                "smalltalk.greet"
+              ],
+              "lebih": [
+                "portfolio.more"
+              ],
+              "banyak": [
+                "portfolio.more"
+              ],
+              "tanya": [
+                "portfolio.more"
+              ],
+              "aju": [
+                "portfolio.more"
+              ],
+              "bantu": [
+                "portfolio.more"
+              ],
+              "paham": [
+                "portfolio.more"
+              ],
+              "harus": [
+                "portfolio.more"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "id",
+                "tag": "nlu-id",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "projek",
+                "apa",
+                "saja",
+                "yang",
+                "anda",
+                "rjakan",
+                "kamu",
+                "cerita",
+                "alam",
+                "kerja",
+                "sudah",
+                "bangun",
+                "di",
+                "tempat",
+                "sebelum",
+                "pernah",
+                "tanggung",
+                "jawab",
+                "riwayat",
+                "karir",
+                "bagaimana",
+                "capai",
+                "tunjuk",
+                "buat",
+                "portofolio",
+                "ada",
+                "tentang",
+                "samping",
+                "bisa",
+                "cipta",
+                "kreasi",
+                "isi",
+                "suka",
+                "erja",
+                "masa",
+                "sepert",
+                "tantang",
+                "minat",
+                "ikmat",
+                "selesai",
+                "arik",
+                "semangat",
+                "potivasi",
+                "mampu",
+                "teknis",
+                "biasa",
+                "paka",
+                "teknolog",
+                "tech",
+                "stack",
+                "kuasa",
+                "skill",
+                "bahasa",
+                "rogram",
+                "tools",
+                "framework",
+                "tahu",
+                "jago",
+                "guna",
+                "cara",
+                "hubung",
+                "informasi",
+                "kontak",
+                "email",
+                "ikan",
+                "detail",
+                "mana",
+                "saya",
+                "emu",
+                "social",
+                "dia",
+                "linkedin",
+                "github",
+                "kasih",
+                "ingin",
+                "link",
+                "mau",
+                "perlu",
+                "halo",
+                "hai",
+                "selamat",
+                "pagi",
+                "siang",
+                "malam",
+                "lebih",
+                "banyak",
+                "tanya",
+                "aju",
+                "bantu",
+                "paham",
+                "harus"
+              ],
+              "intents": [
+                "portfolio.experience",
+                "portfolio.projects",
+                "portfolio.problems",
+                "portfolio.tech",
+                "portfolio.contact",
+                "smalltalk.greet",
+                "portfolio.more"
+              ],
+              "perceptrons": [
+                [
+                  -13.619747161865234,
+                  -1.9651914834976196,
+                  3.656198263168335,
+                  2.956988573074341,
+                  1.056846022605896,
+                  22.50630760192871,
+                  0.6869314312934875,
+                  1.0096882581710815,
+                  13.536916732788086,
+                  -1.1498687267303467,
+                  -4.0048675537109375,
+                  1.4578135013580322,
+                  -2.4966166019439697,
+                  1.4578135013580322,
+                  13.876863479614258,
+                  -13.691619873046875,
+                  6.014051914215088,
+                  6.014051914215088,
+                  14.564671516418457,
+                  0.390051931142807,
+                  -1.1324691772460938,
+                  11.944472312927246,
+                  0.2309141457080841,
+                  -5.141780376434326,
+                  -4.877866268157959,
+                  -1.9514515399932861,
+                  -0.46560847759246826,
+                  -2.1657047271728516,
+                  -1.743137001991272,
+                  -2.567899227142334,
+                  -1.4694766998291016,
+                  0,
+                  -0.682939350605011,
+                  -0.682939350605011,
+                  -0.6297983527183533,
+                  -0.6927295923233032,
+                  -0.04177144542336464,
+                  -0.7454386353492737,
+                  -0.30489516258239746,
+                  -0.30489516258239746,
+                  -0.7034244537353516,
+                  0,
+                  -1.4214718341827393,
+                  -1.7696703672409058,
+                  -1.7696703672409058,
+                  -1.3768575191497803,
+                  -3.2734813690185547,
+                  -3.8673906326293945,
+                  -2.1158130168914795,
+                  -2.1158130168914795,
+                  -1.280832052230835,
+                  -3.5699751377105713,
+                  -0.07345182448625565,
+                  -0.07345182448625565,
+                  -1.815490961074829,
+                  -2.538623809814453,
+                  -2.538623809814453,
+                  0,
+                  -1.202021598815918,
+                  -1.5122367143630981,
+                  -1.205326795578003,
+                  -0.15750494599342346,
+                  -0.4688762128353119,
+                  -0.0006469477666541934,
+                  -0.0022340642753988504,
+                  -0.0022340642753988504,
+                  -0.0012496026465669274,
+                  -0.3955237865447998,
+                  -0.0012496026465669274,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.0006469477666541934,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.18985967338085175,
+                  -0.18721410632133484,
+                  -0.1968902349472046,
+                  -0.06954364478588104,
+                  -0.06363839656114578,
+                  -0.0591292567551136,
+                  -0.36990901827812195,
+                  -0.36990901827812195,
+                  -0.3379564583301544,
+                  0,
+                  -0.05136454477906227,
+                  -0.05136454477906227,
+                  -0.3262571096420288,
+                  -0.2645028170400007
+                ],
+                [
+                  8.471651077270508,
+                  -3.714761734008789,
+                  6.920107364654541,
+                  4.37238073348999,
+                  -2.5851707458496094,
+                  -10.141758918762207,
+                  -0.2725662887096405,
+                  8.346565246582031,
+                  -14.247715950012207,
+                  10.102689743041992,
+                  15.167118072509766,
+                  -5.585838317871094,
+                  -2.3693320751190186,
+                  -5.585838317871094,
+                  -14.961773872375488,
+                  9.112677574157715,
+                  0,
+                  0,
+                  -14.555564880371094,
+                  0,
+                  -0.5680283904075623,
+                  0,
+                  8.969209671020508,
+                  -4.630702972412109,
+                  10.104899406433105,
+                  4.322211265563965,
+                  0.5729894042015076,
+                  8.026524543762207,
+                  8.775308609008789,
+                  -2.8849539756774902,
+                  10.32352352142334,
+                  12.534256935119629,
+                  -2.0310332775115967,
+                  -2.0310332775115967,
+                  -1.5960099697113037,
+                  -3.4160585403442383,
+                  -1.5076521635055542,
+                  -3.364777088165283,
+                  -0.44134289026260376,
+                  -0.44134289026260376,
+                  -1.6490051746368408,
+                  -6.755210876464844,
+                  -2.2722699642181396,
+                  -4.0924482345581055,
+                  -4.0924482345581055,
+                  -1.076432466506958,
+                  -2.7339587211608887,
+                  -3.3679616451263428,
+                  -1.781633973121643,
+                  -1.781633973121643,
+                  -1.911178469657898,
+                  -7.49560022354126,
+                  -0.06788461655378342,
+                  -0.06788461655378342,
+                  -1.5696461200714111,
+                  -2.052117109298706,
+                  -2.0609073638916016,
+                  -0.0592007152736187,
+                  -0.360586941242218,
+                  -0.5680283904075623,
+                  -0.5787611603736877,
+                  -4.43139123916626,
+                  -4.636679172515869,
+                  -2.4102320671081543,
+                  -0.17678581178188324,
+                  -0.17678581178188324,
+                  -1.638766884803772,
+                  -3.6004128456115723,
+                  -1.6384694576263428,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -2.4102320671081543,
+                  -0.015729445964097977,
+                  0,
+                  0,
+                  0,
+                  -0.013902898877859116,
+                  -0.013333206064999104,
+                  -0.040740806609392166,
+                  -0.01161863561719656,
+                  -0.010442462749779224,
+                  -0.00923843588680029,
+                  -2.9379754066467285,
+                  -2.9379754066467285,
+                  -1.9331101179122925,
+                  -0.30273911356925964,
+                  -0.0002064811415039003,
+                  -0.0002064811415039003,
+                  0,
+                  -3.900134045524651
+                ],
+                [
+                  -1.1824111938476562,
+                  1.5048956871032715,
+                  -6.402782917022705,
+                  5.000066757202148,
+                  0,
+                  -0.8678538203239441,
+                  1.0736594200134277,
+                  -2.2547786235809326,
+                  0,
+                  0,
+                  -4.025385856628418,
+                  0,
+                  -0.011043664999306202,
+                  0,
+                  0,
+                  -1.1824111938476562,
+                  0,
+                  0,
+                  -0.0332724004983902,
+                  -0.0332724004983902,
+                  -0.42077699303627014,
+                  0,
+                  -4.443449020385742,
+                  1.4764933586120605,
+                  -1.0030052661895752,
+                  -0.011043664999306202,
+                  0,
+                  0,
+                  -2.548621654510498,
+                  0,
+                  0,
+                  -0.9888291954994202,
+                  6.142679214477539,
+                  6.142679214477539,
+                  -0.9014124870300293,
+                  0.9174001812934875,
+                  1.8188027143478394,
+                  4.556561470031738,
+                  6.137818336486816,
+                  6.137818336486816,
+                  2.7377026081085205,
+                  5.816438674926758,
+                  7.292946815490723,
+                  -1.0484445095062256,
+                  -1.0484445095062256,
+                  -0.789868950843811,
+                  -1.6858211755752563,
+                  -2.1237988471984863,
+                  -0.9706218838691711,
+                  -0.9706218838691711,
+                  -3.186736583709717,
+                  -1.1345869302749634,
+                  -1.930450677871704,
+                  -1.930450677871704,
+                  -0.5354694724082947,
+                  -0.7105099558830261,
+                  -0.7105099558830261,
+                  -1.992385745048523,
+                  0,
+                  -0.3579833209514618,
+                  -0.3579833209514618,
+                  -1.0332404375076294,
+                  -1.9917281866073608,
+                  -1.9923793077468872,
+                  -0.0014995139790698886,
+                  -0.0014995139790698886,
+                  0,
+                  -2.2460622787475586,
+                  0,
+                  -0.9963100552558899,
+                  -0.9963100552558899,
+                  -1.9921079874038696,
+                  -1.9919382333755493,
+                  0,
+                  0,
+                  -0.4672445058822632,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -2.2460622787475586,
+                  -0.23178409039974213,
+                  0,
+                  0,
+                  -1.4265977144241333,
+                  -0.5862183373619486
+                ],
+                [
+                  -5.242290019989014,
+                  3.077446460723877,
+                  0.33118104934692383,
+                  -3.018261194229126,
+                  -1.1563583612442017,
+                  -5.949187755584717,
+                  2.8314523696899414,
+                  3.39550518989563,
+                  -3.481830596923828,
+                  -4.8284010887146,
+                  -4.246777057647705,
+                  -0.7357234954833984,
+                  -2.4516568183898926,
+                  -0.7357234954833984,
+                  -1.3100087642669678,
+                  -2.308621883392334,
+                  -3.8379671573638916,
+                  -3.8379671573638916,
+                  -0.2853361666202545,
+                  -0.2853361666202545,
+                  -2.0795578956604004,
+                  -6.110750198364258,
+                  -11.220497131347656,
+                  -2.38490891456604,
+                  -3.8812763690948486,
+                  -1.5816386938095093,
+                  -1.5977756977081299,
+                  -1.3095892667770386,
+                  9.780789375305176,
+                  -1.092829942703247,
+                  -4.783230781555176,
+                  -0.5871742367744446,
+                  -2.233532428741455,
+                  -2.233532428741455,
+                  -1.2229914665222168,
+                  -1.6299976110458374,
+                  -0.3894871771335602,
+                  -1.152846097946167,
+                  -0.8077537417411804,
+                  -0.8077537417411804,
+                  -0.7457579970359802,
+                  0,
+                  -1.6025962829589844,
+                  4.7465128898620605,
+                  4.7465128898620605,
+                  -2.1590328216552734,
+                  5.17169713973999,
+                  6.477819919586182,
+                  4.743109703063965,
+                  4.743109703063965,
+                  6.0233869552612305,
+                  9.493953704833984,
+                  3.407763957977295,
+                  3.407763957977295,
+                  7.3308424949646,
+                  6.252321243286133,
+                  6.252321243286133,
+                  9.824006080627441,
+                  6.021366596221924,
+                  -1.6803590059280396,
+                  -1.7569905519485474,
+                  -2.692751407623291,
+                  -4.629809379577637,
+                  -7.7892022132873535,
+                  -0.6907686591148376,
+                  -0.6907686591148376,
+                  -2.7789196968078613,
+                  -5.616090297698975,
+                  -2.7789196968078613,
+                  -2.819267511367798,
+                  -2.819267511367798,
+                  -4.47080659866333,
+                  -4.471354007720947,
+                  -3.3817408084869385,
+                  -0.035437390208244324,
+                  -1.2651962041854858,
+                  0,
+                  0,
+                  -0.025130655616521835,
+                  -0.024166133254766464,
+                  -0.05187775194644928,
+                  -0.01588856615126133,
+                  -0.014251258224248886,
+                  -0.012616688385605812,
+                  -1.405661940574646,
+                  -1.405661940574646,
+                  -2.784790515899658,
+                  -0.49617910385131836,
+                  0,
+                  0,
+                  -0.04312464967370033,
+                  -1.4365121598187547
+                ],
+                [
+                  -1.575518250465393,
+                  2.5339879989624023,
+                  -6.378651142120361,
+                  -6.119694232940674,
+                  -0.133586123585701,
+                  -1.6510200500488281,
+                  -0.05500371381640434,
+                  -4.497523784637451,
+                  -2.077681064605713,
+                  -4.017515659332275,
+                  -0.7565716505050659,
+                  -0.1385982632637024,
+                  -0.28273335099220276,
+                  -0.1385982632637024,
+                  -0.9430080652236938,
+                  -0.23218317329883575,
+                  -1.46363365650177,
+                  -1.46363365650177,
+                  -3.2521955966949463,
+                  -2.8684072494506836,
+                  0.08274722844362259,
+                  -1.4018492698669434,
+                  2.2468862533569336,
+                  -0.6031643152236938,
+                  -4.407096862792969,
+                  0,
+                  -0.3650822341442108,
+                  -0.10964793711900711,
+                  -4.105832576751709,
+                  0,
+                  -1.1133170127868652,
+                  -2.2110238075256348,
+                  -3.1345815658569336,
+                  -3.1345815658569336,
+                  -2.2659008502960205,
+                  -2.2659008502960205,
+                  0,
+                  -0.310847669839859,
+                  -1.2962453365325928,
+                  -1.2962453365325928,
+                  -0.310847669839859,
+                  -0.047890663146972656,
+                  -0.26648595929145813,
+                  -0.32774513959884644,
+                  -0.32774513959884644,
+                  -0.019239187240600586,
+                  -0.019239187240600586,
+                  -0.019239187240600586,
+                  -0.010057603009045124,
+                  -0.010057603009045124,
+                  -0.09251783043146133,
+                  -0.40462568402290344,
+                  -0.09251783043146133,
+                  -0.09251783043146133,
+                  0,
+                  0,
+                  -1.596752405166626,
+                  -5.193169593811035,
+                  0,
+                  3.0362741947174072,
+                  9.304394721984863,
+                  0.7476414442062378,
+                  9.43800163269043,
+                  10.005353927612305,
+                  1.55849027633667,
+                  1.55849027633667,
+                  3.17738676071167,
+                  3.649918556213379,
+                  9.687507629394531,
+                  5.001687526702881,
+                  5.001687526702881,
+                  10.014525413513184,
+                  10.011877059936523,
+                  6.536724090576172,
+                  -0.42007994651794434,
+                  -0.10271044820547104,
+                  -0.6168561577796936,
+                  -0.5891691446304321,
+                  -1.8815990686416626,
+                  -1.8813667297363281,
+                  -1.412578821182251,
+                  -0.47107285261154175,
+                  -0.47082406282424927,
+                  -0.47065719962120056,
+                  -1.8133659362792969,
+                  -1.8133659362792969,
+                  -1.648856520652771,
+                  -0.4154910743236542,
+                  -2.7639243602752686,
+                  -2.7639243602752686,
+                  -0.27349206805229187,
+                  1.863203332986828
+                ],
+                [
+                  -1.0767507553100586,
+                  -1.8712314367294312,
+                  -1.2883777618408203,
+                  -0.9246727228164673,
+                  -0.3687719702720642,
+                  -0.4409449100494385,
+                  -4.092609405517578,
+                  -2.122671604156494,
+                  -0.2730090022087097,
+                  -0.921968400478363,
+                  -0.005285969469696283,
+                  -0.005285969469696283,
+                  -0.6463799476623535,
+                  -0.005285969469696283,
+                  -0.1344883143901825,
+                  0,
+                  -0.06794432550668716,
+                  -0.06794432550668716,
+                  -0.470298707485199,
+                  -0.3017093539237976,
+                  -2.211921453475952,
+                  -0.023266064003109932,
+                  -0.9561715722084045,
+                  0,
+                  -1.0880094766616821,
+                  0,
+                  -0.054502230137586594,
+                  0,
+                  -0.8768600821495056,
+                  0,
+                  -0.11709899455308914,
+                  0,
+                  -0.040428102016448975,
+                  -0.040428102016448975,
+                  -0.04256929084658623,
+                  -0.04256929084658623,
+                  0,
+                  0,
+                  -0.012656633742153645,
+                  -0.012656633742153645,
+                  0,
+                  0,
+                  0,
+                  -0.06479518115520477,
+                  -0.06479518115520477,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.06769600510597229,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.4785692095756531,
+                  -0.024661632254719734,
+                  0,
+                  -1.8794137239456177,
+                  -1.8794137239456177,
+                  -0.1111527532339096,
+                  -1.198948621749878,
+                  -0.5006399750709534,
+                  -0.39686813950538635,
+                  -0.39686813950538635,
+                  -0.6791912913322449,
+                  -2.6555068492889404,
+                  0,
+                  -0.008108391426503658,
+                  -0.008108391426503658,
+                  -0.009106063283979893,
+                  -0.0070607890374958515,
+                  -0.5006399750709534,
+                  -0.4785692095756531,
+                  0,
+                  0,
+                  0,
+                  8.314960479736328,
+                  8.314960479736328,
+                  6.236227035522461,
+                  2.0787389278411865,
+                  2.0787389278411865,
+                  2.0787386894226074,
+                  -1.9240387678146362,
+                  -1.9240387678146362,
+                  -0.4654638171195984,
+                  -0.10177037119865417,
+                  -1.657621145248413,
+                  -1.657621145248413,
+                  -0.08768495172262192,
+                  5.970749749741379
+                ],
+                [
+                  -1.046905755996704,
+                  1.161441445350647,
+                  -1.6964672803878784,
+                  1.5146243572235107,
+                  -0.41391241550445557,
+                  -1.08037269115448,
+                  -5.657224655151367,
+                  4.10232400894165,
+                  -0.23972176015377045,
+                  -0.6636698246002197,
+                  -0.4149744510650635,
+                  -0.13671210408210754,
+                  -0.2830333709716797,
+                  -0.13671210408210754,
+                  -0.24322643876075745,
+                  -0.1596597582101822,
+                  -0.0033188124652951956,
+                  -0.0033188124652951956,
+                  -0.009003282524645329,
+                  -0.009003282524645329,
+                  -0.25263115763664246,
+                  0,
+                  -0.6489837169647217,
+                  -0.2595430612564087,
+                  -0.14093594253063202,
+                  -0.021493157371878624,
+                  -0.07456246763467789,
+                  0,
+                  1.1000475883483887,
+                  0,
+                  -0.032468684017658234,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.08438179641962051,
+                  -0.08438179641962051,
+                  -0.16619879007339478,
+                  0,
+                  0,
+                  -0.047722697257995605,
+                  -0.01618575118482113,
+                  -0.018559282645583153,
+                  -0.0004877848841715604,
+                  -0.0004877848841715604,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.008055641315877438,
+                  -0.0004178154340479523,
+                  -0.008055641315877438,
+                  -0.008055641315877438,
+                  0,
+                  0,
+                  -0.10545512288808823,
+                  0,
+                  0,
+                  -0.23490594327449799,
+                  -1.081368327140808,
+                  0,
+                  -0.7658857107162476,
+                  -0.006873873993754387,
+                  0,
+                  0,
+                  -1.1182057857513428,
+                  5.149284839630127,
+                  -1.1182057857513428,
+                  0,
+                  0,
+                  0,
+                  0,
+                  -0.006873873993754387,
+                  -0.9414896965026855,
+                  0,
+                  -0.4087887704372406,
+                  -0.30255189538002014,
+                  -1.2452609539031982,
+                  -1.245260238647461,
+                  -1.0206072330474854,
+                  -0.3603963255882263,
+                  -0.3341006636619568,
+                  -0.31184515357017517,
+                  4.469057083129883,
+                  4.469057083129883,
+                  4.1142144203186035,
+                  0.0012656962499022484,
+                  3.9455726146698,
+                  3.9455726146698,
+                  1.10102379322052,
+                  1.2452711820402131
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "What did you build at your previous company?"
+      ],
+      [
+        "en",
+        "What did you work on in your last role?"
+      ],
+      [
+        "en",
+        "Tell me about your work experience"
+      ],
+      [
+        "en",
+        "What kind of projects did you do before?"
+      ],
+      [
+        "en",
+        "What have you worked on?"
+      ],
+      [
+        "en",
+        "Tell me about your previous work"
+      ],
+      [
+        "en",
+        "What did you do in your previous job?"
+      ],
+      [
+        "en",
+        "What were your responsibilities?"
+      ],
+      [
+        "en",
+        "Tell me about your career history"
+      ],
+      [
+        "en",
+        "What have you accomplished?"
+      ],
+      [
+        "en",
+        "Show me your work history"
+      ],
+      [
+        "id",
+        "projek apa saja yang anda kerjakan?"
+      ],
+      [
+        "id",
+        "projek apa saja yang kamu kerjakan?"
+      ],
+      [
+        "id",
+        "ceritakan pengalaman kerja kamu"
+      ],
+      [
+        "id",
+        "pengalaman kerja kamu apa saja?"
+      ],
+      [
+        "id",
+        "apa saja yang sudah kamu bangun di tempat kerja sebelumnya?"
+      ],
+      [
+        "id",
+        "ceritakan pekerjaan kamu sebelumnya"
+      ],
+      [
+        "id",
+        "apa saja yang pernah kamu kerjakan?"
+      ],
+      [
+        "id",
+        "tanggung jawab kamu apa saja?"
+      ],
+      [
+        "id",
+        "riwayat karir kamu bagaimana?"
+      ],
+      [
+        "id",
+        "apa saja pencapaian kamu?"
+      ],
+      [
+        "id",
+        "tunjukkan riwayat kerja kamu"
+      ],
+      [
+        "en",
+        "Tell me about your projects and experience."
+      ],
+      [
+        "en",
+        "What projects have you worked on?"
+      ],
+      [
+        "en",
+        "Show me your portfolio projects"
+      ],
+      [
+        "en",
+        "What's in your portfolio?"
+      ],
+      [
+        "en",
+        "Show me your portfolio"
+      ],
+      [
+        "en",
+        "What projects are in your portfolio?"
+      ],
+      [
+        "en",
+        "Tell me about your portfolio"
+      ],
+      [
+        "en",
+        "What have you built?"
+      ],
+      [
+        "en",
+        "Show me what you've built"
+      ],
+      [
+        "en",
+        "What are your side projects?"
+      ],
+      [
+        "en",
+        "Tell me about your work"
+      ],
+      [
+        "en",
+        "What can you show me?"
+      ],
+      [
+        "en",
+        "Show me your work"
+      ],
+      [
+        "en",
+        "What have you created?"
+      ],
+      [
+        "en",
+        "Tell me about your creations"
+      ],
+      [
+        "id",
+        "projek apa saja yang pernah kamu buat?"
+      ],
+      [
+        "id",
+        "ceritakan projek yang pernah kamu kerjakan"
+      ],
+      [
+        "id",
+        "projek apa saja di portofolio kamu?"
+      ],
+      [
+        "id",
+        "apa saja yang ada di portofolio kamu?"
+      ],
+      [
+        "id",
+        "tunjukkan portofolio kamu"
+      ],
+      [
+        "id",
+        "projek apa saja di portofolio?"
+      ],
+      [
+        "id",
+        "ceritakan tentang portofolio kamu"
+      ],
+      [
+        "id",
+        "apa saja yang sudah kamu buat?"
+      ],
+      [
+        "id",
+        "tunjukkan apa yang sudah kamu buat"
+      ],
+      [
+        "id",
+        "projek sampingan kamu apa saja?"
+      ],
+      [
+        "id",
+        "ceritakan pekerjaan kamu"
+      ],
+      [
+        "id",
+        "apa yang bisa kamu tunjukkan?"
+      ],
+      [
+        "id",
+        "tunjukkan pekerjaan kamu"
+      ],
+      [
+        "id",
+        "apa saja yang sudah kamu ciptakan?"
+      ],
+      [
+        "id",
+        "ceritakan kreasi kamu"
+      ],
+      [
+        "id",
+        "portofolio kamu berisi apa?"
+      ],
+      [
+        "id",
+        "projek yang pernah kamu kerjakan apa saja?"
+      ],
+      [
+        "en",
+        "What kind of problems do you like to work on?"
+      ],
+      [
+        "en",
+        "What type of challenges are you interested in?"
+      ],
+      [
+        "en",
+        "What problems do you enjoy solving?"
+      ],
+      [
+        "id",
+        "kamu suka mengerjakan masalah seperti apa?"
+      ],
+      [
+        "id",
+        "tantangan seperti apa yang kamu minati?"
+      ],
+      [
+        "id",
+        "kamu menikmati menyelesaikan masalah seperti apa?"
+      ],
+      [
+        "en",
+        "What do you like to work on?"
+      ],
+      [
+        "en",
+        "What interests you?"
+      ],
+      [
+        "en",
+        "What are you passionate about?"
+      ],
+      [
+        "en",
+        "What motivates you?"
+      ],
+      [
+        "id",
+        "kamu suka mengerjakan apa?"
+      ],
+      [
+        "id",
+        "apa yang menarik minat kamu?"
+      ],
+      [
+        "id",
+        "apa yang membuat kamu semangat?"
+      ],
+      [
+        "id",
+        "apa yang memotivasi kamu?"
+      ],
+      [
+        "en",
+        "Tell me about your technical expertise."
+      ],
+      [
+        "en",
+        "What technologies do you use?"
+      ],
+      [
+        "en",
+        "What is your tech stack?"
+      ],
+      [
+        "en",
+        "What technologies are you familiar with?"
+      ],
+      [
+        "en",
+        "What skills do you have?"
+      ],
+      [
+        "en",
+        "What are your technical skills?"
+      ],
+      [
+        "en",
+        "Tell me about your skills"
+      ],
+      [
+        "en",
+        "What programming languages do you know?"
+      ],
+      [
+        "en",
+        "What tools do you use?"
+      ],
+      [
+        "en",
+        "What frameworks do you know?"
+      ],
+      [
+        "en",
+        "What are you good at?"
+      ],
+      [
+        "en",
+        "What can you do?"
+      ],
+      [
+        "id",
+        "ceritakan kemampuan teknis kamu"
+      ],
+      [
+        "id",
+        "kamu biasa pakai teknologi apa saja?"
+      ],
+      [
+        "id",
+        "tech stack kamu apa saja?"
+      ],
+      [
+        "id",
+        "teknologi apa saja yang kamu kuasai?"
+      ],
+      [
+        "id",
+        "skill kamu apa saja?"
+      ],
+      [
+        "id",
+        "kemampuan teknis kamu apa saja?"
+      ],
+      [
+        "id",
+        "ceritakan skill kamu"
+      ],
+      [
+        "id",
+        "bahasa pemrograman apa yang kamu kuasai?"
+      ],
+      [
+        "id",
+        "tools apa saja yang kamu pakai?"
+      ],
+      [
+        "id",
+        "framework apa saja yang kamu tahu?"
+      ],
+      [
+        "id",
+        "kamu jago apa?"
+      ],
+      [
+        "id",
+        "kamu bisa apa?"
+      ],
+      [
+        "id",
+        "teknologi yang kamu gunakan apa saja?"
+      ],
+      [
+        "en",
+        "How can I contact you?"
+      ],
+      [
+        "en",
+        "What is your contact information?"
+      ],
+      [
+        "en",
+        "How can I reach you?"
+      ],
+      [
+        "en",
+        "What is your email?"
+      ],
+      [
+        "en",
+        "Give me your contact details"
+      ],
+      [
+        "en",
+        "Where can I find you?"
+      ],
+      [
+        "en",
+        "Show me your contact info"
+      ],
+      [
+        "en",
+        "What are your social media?"
+      ],
+      [
+        "en",
+        "How can I get in touch?"
+      ],
+      [
+        "en",
+        "What's your LinkedIn?"
+      ],
+      [
+        "en",
+        "What's your GitHub?"
+      ],
+      [
+        "en",
+        "Can I have your email?"
+      ],
+      [
+        "en",
+        "I want to contact you"
+      ],
+      [
+        "en",
+        "How do I reach out?"
+      ],
+      [
+        "id",
+        "bagaimana cara menghubungi kamu?"
+      ],
+      [
+        "id",
+        "apa informasi kontak kamu?"
+      ],
+      [
+        "id",
+        "apa email kamu?"
+      ],
+      [
+        "id",
+        "berikan detail kontak kamu"
+      ],
+      [
+        "id",
+        "dimana saya bisa menemukan kamu?"
+      ],
+      [
+        "id",
+        "tunjukkan informasi kontak kamu"
+      ],
+      [
+        "id",
+        "apa social media kamu?"
+      ],
+      [
+        "id",
+        "apa LinkedIn kamu?"
+      ],
+      [
+        "id",
+        "apa GitHub kamu?"
+      ],
+      [
+        "id",
+        "bisa kasih email kamu?"
+      ],
+      [
+        "id",
+        "saya ingin menghubungi kamu"
+      ],
+      [
+        "id",
+        "bagaimana cara menghubungi?"
+      ],
+      [
+        "id",
+        "kontak kamu apa?"
+      ],
+      [
+        "id",
+        "cara menghubungi kamu bagaimana?"
+      ],
+      [
+        "id",
+        "email kamu apa?"
+      ],
+      [
+        "id",
+        "link LinkedIn kamu apa?"
+      ],
+      [
+        "id",
+        "link GitHub kamu apa?"
+      ],
+      [
+        "id",
+        "saya mau kontak kamu"
+      ],
+      [
+        "id",
+        "cara kontak kamu bagaimana?"
+      ],
+      [
+        "id",
+        "kontak kamu dimana?"
+      ],
+      [
+        "id",
+        "saya perlu kontak kamu"
+      ],
+      [
+        "en",
+        "Hi"
+      ],
+      [
+        "en",
+        "Hello"
+      ],
+      [
+        "en",
+        "Hey there"
+      ],
+      [
+        "id",
+        "halo"
+      ],
+      [
+        "id",
+        "hai"
+      ],
+      [
+        "id",
+        "selamat pagi"
+      ],
+      [
+        "id",
+        "selamat siang"
+      ],
+      [
+        "id",
+        "selamat malam"
+      ],
+      [
+        "en",
+        "I want to know more"
+      ],
+      [
+        "en",
+        "Tell me more"
+      ],
+      [
+        "en",
+        "What can I ask you?"
+      ],
+      [
+        "en",
+        "What questions can I ask?"
+      ],
+      [
+        "en",
+        "Help me understand"
+      ],
+      [
+        "en",
+        "What should I ask?"
+      ],
+      [
+        "id",
+        "saya ingin tahu lebih banyak"
+      ],
+      [
+        "id",
+        "ceritakan lebih banyak"
+      ],
+      [
+        "id",
+        "apa yang bisa saya tanya?"
+      ],
+      [
+        "id",
+        "pertanyaan apa yang bisa saya ajukan?"
+      ],
+      [
+        "id",
+        "bantu saya memahami"
+      ],
+      [
+        "id",
+        "apa yang harus saya tanya?"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "portfolio.experience": [
+          {
+            "answer": "Here is a summary of what I have built and worked on:\n\nI am Mochamad Alifian Hedardi Kadarusman, a Full-Stack & System Engineer.\n\nFullstack Developer with 4+ years of experience building enterprise-grade web and mobile applications for Toyota Motor Manufacturing Indonesia and blockchain startups. Specialized in ASP.NET Core, React.js ecosystem, and Kotlin Android development.\n\nExperience:\n- Fullstack Developer at PT. Toyota Motor Manufacturing Indonesia (Jun 2024 - Present): Karawang Plant 1: Built Identification Vehicle System with dynamic dashboard, drag-and-drop widget grid, and multi-VIN comparison functionality Designed role-based access control system with granular permissions for menu, tab, and data-level authorization Developed advanced vehicle history search with dynamic parameter builder and Sakanobori sequence tracking Integrated multi-database connection management supporting PostgreSQL, MySQL, SQL Server, Oracle, and FTP/SFTP sources Created real-time widget configuration system allowing dynamic data visualization (charts, tables, grids, lists) with JSON-based customization Implemented automated data ingestion pipeline with cron-based scheduling for ETL jobs and file transfer operations | Karawang Engine Plant: Assisted users in recording and categorizing defective items for analysis and traceability Integrated machine learning output into the web interface to display defect predictions Developed a responsive UI for defect data entry and classification management | Karawang Plant 3: Developed a mobile application using Kotlin and Google Maps API to visualize truck delivery routes Created dashboard modules to display total delivered goods in real-time Implemented delivery list views with dynamic filtering and status updates | Sunter Plant 1: Built a dynamic interface to generate case labels for export packaging Developed validation logic to ensure export items meet compliance requirements Refactored program structure for efficient export processing and integration\n- Web Developer at Air Pure Flow (Mei 2025 - August 2025): Developed a web static site using Next.js to showcase air delivery system for Air Pure Flow. Setup SEO and technical optimization for the website. Twilio VoIP integration for real-time call features across multiple departments\n- Web Developer at Blue Key Locksmith (Mei 2025 - August 2025): Developed a web static site using Next.js to showcase locksmith services for Blue Key Locksmith. Setup SEO and technical optimization for the website.\n- Fullstack Developer at Skull (Jun 2022 - Aug 2022): Built a robust Solana NFT minting automation backend (Node.js, Web3.js) capable of handling mass mint requests efficiently. Engineered Merkle tree whitelist mechanisms to enable secure and gas-efficient NFT claim processes. Streamlined NFT smart contract deployment pipelines from backend APIs, enabling seamless user minting flows. Deployed and maintained scalable REST APIs to provide frontend clients with real-time minting progress and blockchain events.\n- Fullstack Developer at Poglana (Jun 2022 - Aug 2022): Developed sophisticated data scraping system for Solana blockchain using Node.js and Web3.js Implemented Merkle tree algorithms for efficient whitelist verification and gas optimization Built and managed liquidity pool deployment systems for DeFi protocols Created high-performance REST APIs serving real-time blockchain data to frontend applications\n- Technical Assistant & Developer (Part-time) at Universitas Gunadarma (Jan 2022 - Jun 2024): Developed comprehensive Lecturer Scheduling system using PHP and MySQL Automated administrative processes reducing manual work Managed academic operations including financial processes, certifications, and resource allocation\n\nProjects:\n- One Vehicle One ID System: Built a dynamic dashboard interface with customizable widget grid system supporting drag-and-drop layout management. Developed comprehensive vehicle profile system with tree-based navigation and multi-VIN comparison functionality. Implemented automated data ingestion pipeline with cron-based scheduling for ETL jobs and file transfer operations.. Tech: Next.js, TypeScript, PostgreSQL, MySQL, SQL Server, Oracle, ETL\n- Eternity: Assisted users in recording and categorizing defective items for analysis and traceability. Integrated machine learning output into the web interface to display defect predictions. Developed a responsive UI for defect data entry and classification management.. Tech: Express.js, TypeScript, Machine Learning, Vue.js, SQL Server\n- eManifest: Developed a mobile application using Kotlin and Google Maps API to visualize truck delivery routes. Created dashboard modules to display total delivered goods in real-time. Implemented delivery list views with dynamic filtering and status updates.. Tech: Kotlin, Android, Google Maps API, RESTful API, Real-time Data\n- IDCS Integrated Delivery Control System: Developed a web application using ASP.NET Core and SQL Server to manage integrated delivery control system for Toyota Motor Manufacturing Indonesia.. Tech: ASP.NET Core, C#, SQL Server\n- SPEX: Built a dynamic interface to generate case labels for export packaging. Developed validation logic to ensure export items meet compliance requirements. Refactored program structure for efficient export processing and integration.. Tech: ASP.NET Core, C#, SQL Server, TypeScript, React\n- Pure Flow Air Delivery: Developed a web static site using Next.js to showcase air delivery system for Pure Flow Air Duct.. Tech: Next.js, TypeScript, Tailwind CSS\n- WebRTC Pure Flow Air Delivery: Developed a webRTC application using Next.js to enable real-time communication between Pure Flow Air Duct and the user.. Tech: Next.js, TypeScript, Tailwind CSS, WebRTC\n- Blue Key Locksmith: Developed a web static site using Next.js to showcase locksmith services for Blue Key Locksmith.. Tech: Next.js, TypeScript, Tailwind CSS"
+          }
+        ],
+        "portfolio.projects": [
+          {
+            "answer": "Here are some of my key projects:\n\n- One Vehicle One ID System: Built a dynamic dashboard interface with customizable widget grid system supporting drag-and-drop layout management. Developed comprehensive vehicle profile system with tree-based navigation and multi-VIN comparison functionality. Implemented automated data ingestion pipeline with cron-based scheduling for ETL jobs and file transfer operations.. Tech: Next.js, TypeScript, PostgreSQL, MySQL, SQL Server, Oracle, ETL\n- Eternity: Assisted users in recording and categorizing defective items for analysis and traceability. Integrated machine learning output into the web interface to display defect predictions. Developed a responsive UI for defect data entry and classification management.. Tech: Express.js, TypeScript, Machine Learning, Vue.js, SQL Server\n- eManifest: Developed a mobile application using Kotlin and Google Maps API to visualize truck delivery routes. Created dashboard modules to display total delivered goods in real-time. Implemented delivery list views with dynamic filtering and status updates.. Tech: Kotlin, Android, Google Maps API, RESTful API, Real-time Data\n- IDCS Integrated Delivery Control System: Developed a web application using ASP.NET Core and SQL Server to manage integrated delivery control system for Toyota Motor Manufacturing Indonesia.. Tech: ASP.NET Core, C#, SQL Server\n- SPEX: Built a dynamic interface to generate case labels for export packaging. Developed validation logic to ensure export items meet compliance requirements. Refactored program structure for efficient export processing and integration.. Tech: ASP.NET Core, C#, SQL Server, TypeScript, React\n- Pure Flow Air Delivery: Developed a web static site using Next.js to showcase air delivery system for Pure Flow Air Duct.. Tech: Next.js, TypeScript, Tailwind CSS\n- WebRTC Pure Flow Air Delivery: Developed a webRTC application using Next.js to enable real-time communication between Pure Flow Air Duct and the user.. Tech: Next.js, TypeScript, Tailwind CSS, WebRTC\n- Blue Key Locksmith: Developed a web static site using Next.js to showcase locksmith services for Blue Key Locksmith.. Tech: Next.js, TypeScript, Tailwind CSS\n\nIf you want, I can go deeper into any specific project or tech stack."
+          }
+        ],
+        "portfolio.problems": [
+          {
+            "answer": "I enjoy working on challenging problems, especially those that involve building real-world products, improving user experience, and solving practical business or operational issues.\n\nI like working across the stack when needed, but always with clean, maintainable, and production-ready code."
+          }
+        ],
+        "portfolio.tech": [
+          {
+            "answer": "From my recent projects, I have hands-on experience with: Next.js, TypeScript, PostgreSQL, MySQL, SQL Server, Oracle, ETL, Express.js, Machine Learning, Vue.js, Kotlin, Android, Google Maps API, RESTful API, Real-time Data, ASP.NET Core, C#, React, Tailwind CSS, WebRTC.\n\nAcross these technologies, I focus on writing clean, maintainable, and well-tested code, with attention to performance and good architecture."
+          }
+        ],
+        "portfolio.contact": [
+          {
+            "answer": "You can reach me through:\n\n- Email: mochamadkadarusman@gmail.com\n- LinkedIn: https://www.linkedin.com/in/mochamad-alifian-hedardi-kadarusman-855944248/\n- GitHub: https://github.com/cantiir2\n\nFeel free to connect or reach out if you'd like to discuss opportunities or collaborate!"
+          }
+        ],
+        "smalltalk.greet": [
+          {
+            "answer": "Hi! I'm the AI assistant for Mochamad Alifian Hedardi Kadarusman. You can ask me about experience, projects, and technical skills."
+          }
+        ],
+        "portfolio.more": [
+          {
+            "answer": "You can ask me things like:\n- What did you build at your previous company?\n- Tell me about your projects and experience.\n- What kind of problems do you like to work on?\n- Tell me about your technical expertise."
+          }
+        ]
+      },
+      "id": {
+        "portfolio.experience": [
+          {
+            "answer": "Berikut ringkasan pengalaman kerja dan hal yang sudah saya bangun:\n\nI am Mochamad Alifian Hedardi Kadarusman, a Full-Stack & System Engineer.\n\nFullstack Developer with 4+ years of experience building enterprise-grade web and mobile applications for Toyota Motor Manufacturing Indonesia and blockchain startups. Specialized in ASP.NET Core, React.js ecosystem, and Kotlin Android development.\n\nExperience:\n- Fullstack Developer at PT. Toyota Motor Manufacturing Indonesia (Jun 2024 - Present): Karawang Plant 1: Built Identification Vehicle System with dynamic dashboard, drag-and-drop widget grid, and multi-VIN comparison functionality Designed role-based access control system with granular permissions for menu, tab, and data-level authorization Developed advanced vehicle history search with dynamic parameter builder and Sakanobori sequence tracking Integrated multi-database connection management supporting PostgreSQL, MySQL, SQL Server, Oracle, and FTP/SFTP sources Created real-time widget configuration system allowing dynamic data visualization (charts, tables, grids, lists) with JSON-based customization Implemented automated data ingestion pipeline with cron-based scheduling for ETL jobs and file transfer operations | Karawang Engine Plant: Assisted users in recording and categorizing defective items for analysis and traceability Integrated machine learning output into the web interface to display defect predictions Developed a responsive UI for defect data entry and classification management | Karawang Plant 3: Developed a mobile application using Kotlin and Google Maps API to visualize truck delivery routes Created dashboard modules to display total delivered goods in real-time Implemented delivery list views with dynamic filtering and status updates | Sunter Plant 1: Built a dynamic interface to generate case labels for export packaging Developed validation logic to ensure export items meet compliance requirements Refactored program structure for efficient export processing and integration\n- Web Developer at Air Pure Flow (Mei 2025 - August 2025): Developed a web static site using Next.js to showcase air delivery system for Air Pure Flow. Setup SEO and technical optimization for the website. Twilio VoIP integration for real-time call features across multiple departments\n- Web Developer at Blue Key Locksmith (Mei 2025 - August 2025): Developed a web static site using Next.js to showcase locksmith services for Blue Key Locksmith. Setup SEO and technical optimization for the website.\n- Fullstack Developer at Skull (Jun 2022 - Aug 2022): Built a robust Solana NFT minting automation backend (Node.js, Web3.js) capable of handling mass mint requests efficiently. Engineered Merkle tree whitelist mechanisms to enable secure and gas-efficient NFT claim processes. Streamlined NFT smart contract deployment pipelines from backend APIs, enabling seamless user minting flows. Deployed and maintained scalable REST APIs to provide frontend clients with real-time minting progress and blockchain events.\n- Fullstack Developer at Poglana (Jun 2022 - Aug 2022): Developed sophisticated data scraping system for Solana blockchain using Node.js and Web3.js Implemented Merkle tree algorithms for efficient whitelist verification and gas optimization Built and managed liquidity pool deployment systems for DeFi protocols Created high-performance REST APIs serving real-time blockchain data to frontend applications\n- Technical Assistant & Developer (Part-time) at Universitas Gunadarma (Jan 2022 - Jun 2024): Developed comprehensive Lecturer Scheduling system using PHP and MySQL Automated administrative processes reducing manual work Managed academic operations including financial processes, certifications, and resource allocation\n\nProjects:\n- One Vehicle One ID System: Built a dynamic dashboard interface with customizable widget grid system supporting drag-and-drop layout management. Developed comprehensive vehicle profile system with tree-based navigation and multi-VIN comparison functionality. Implemented automated data ingestion pipeline with cron-based scheduling for ETL jobs and file transfer operations.. Tech: Next.js, TypeScript, PostgreSQL, MySQL, SQL Server, Oracle, ETL\n- Eternity: Assisted users in recording and categorizing defective items for analysis and traceability. Integrated machine learning output into the web interface to display defect predictions. Developed a responsive UI for defect data entry and classification management.. Tech: Express.js, TypeScript, Machine Learning, Vue.js, SQL Server\n- eManifest: Developed a mobile application using Kotlin and Google Maps API to visualize truck delivery routes. Created dashboard modules to display total delivered goods in real-time. Implemented delivery list views with dynamic filtering and status updates.. Tech: Kotlin, Android, Google Maps API, RESTful API, Real-time Data\n- IDCS Integrated Delivery Control System: Developed a web application using ASP.NET Core and SQL Server to manage integrated delivery control system for Toyota Motor Manufacturing Indonesia.. Tech: ASP.NET Core, C#, SQL Server\n- SPEX: Built a dynamic interface to generate case labels for export packaging. Developed validation logic to ensure export items meet compliance requirements. Refactored program structure for efficient export processing and integration.. Tech: ASP.NET Core, C#, SQL Server, TypeScript, React\n- Pure Flow Air Delivery: Developed a web static site using Next.js to showcase air delivery system for Pure Flow Air Duct.. Tech: Next.js, TypeScript, Tailwind CSS\n- WebRTC Pure Flow Air Delivery: Developed a webRTC application using Next.js to enable real-time communication between Pure Flow Air Duct and the user.. Tech: Next.js, TypeScript, Tailwind CSS, WebRTC\n- Blue Key Locksmith: Developed a web static site using Next.js to showcase locksmith services for Blue Key Locksmith.. Tech: Next.js, TypeScript, Tailwind CSS"
+          }
+        ],
+        "portfolio.projects": [
+          {
+            "answer": "Berikut beberapa projek utama yang pernah saya kerjakan:\n\n- One Vehicle One ID System: Built a dynamic dashboard interface with customizable widget grid system supporting drag-and-drop layout management. Developed comprehensive vehicle profile system with tree-based navigation and multi-VIN comparison functionality. Implemented automated data ingestion pipeline with cron-based scheduling for ETL jobs and file transfer operations.. Tech: Next.js, TypeScript, PostgreSQL, MySQL, SQL Server, Oracle, ETL\n- Eternity: Assisted users in recording and categorizing defective items for analysis and traceability. Integrated machine learning output into the web interface to display defect predictions. Developed a responsive UI for defect data entry and classification management.. Tech: Express.js, TypeScript, Machine Learning, Vue.js, SQL Server\n- eManifest: Developed a mobile application using Kotlin and Google Maps API to visualize truck delivery routes. Created dashboard modules to display total delivered goods in real-time. Implemented delivery list views with dynamic filtering and status updates.. Tech: Kotlin, Android, Google Maps API, RESTful API, Real-time Data\n- IDCS Integrated Delivery Control System: Developed a web application using ASP.NET Core and SQL Server to manage integrated delivery control system for Toyota Motor Manufacturing Indonesia.. Tech: ASP.NET Core, C#, SQL Server\n- SPEX: Built a dynamic interface to generate case labels for export packaging. Developed validation logic to ensure export items meet compliance requirements. Refactored program structure for efficient export processing and integration.. Tech: ASP.NET Core, C#, SQL Server, TypeScript, React\n- Pure Flow Air Delivery: Developed a web static site using Next.js to showcase air delivery system for Pure Flow Air Duct.. Tech: Next.js, TypeScript, Tailwind CSS\n- WebRTC Pure Flow Air Delivery: Developed a webRTC application using Next.js to enable real-time communication between Pure Flow Air Duct and the user.. Tech: Next.js, TypeScript, Tailwind CSS, WebRTC\n- Blue Key Locksmith: Developed a web static site using Next.js to showcase locksmith services for Blue Key Locksmith.. Tech: Next.js, TypeScript, Tailwind CSS\n\nKalau ingin, saya bisa jelaskan lebih detail tentang projek atau tech stack tertentu."
+          }
+        ],
+        "portfolio.problems": [
+          {
+            "answer": "Saya menyukai tantangan yang berhubungan dengan pembangunan produk nyata, peningkatan user experience, dan penyelesaian masalah bisnis atau operasional.\n\nSaya nyaman bekerja di berbagai bagian stack jika dibutuhkan, dengan fokus pada kode yang rapi, mudah dirawat, dan siap produksi."
+          }
+        ],
+        "portfolio.tech": [
+          {
+            "answer": "Dari projek-projek terbaru saya, saya terbiasa bekerja dengan teknologi berikut: Next.js, TypeScript, PostgreSQL, MySQL, SQL Server, Oracle, ETL, Express.js, Machine Learning, Vue.js, Kotlin, Android, Google Maps API, RESTful API, Real-time Data, ASP.NET Core, C#, React, Tailwind CSS, WebRTC.\n\nDi atas teknologi tersebut, saya fokus menulis kode yang rapi, mudah dirawat, dan siap produksi, dengan perhatian pada performa dan arsitektur yang baik."
+          }
+        ],
+        "portfolio.contact": [
+          {
+            "answer": "Kamu bisa menghubungi saya melalui:\n\n- Email: mochamadkadarusman@gmail.com\n- LinkedIn: https://www.linkedin.com/in/mochamad-alifian-hedardi-kadarusman-855944248/\n- GitHub: https://github.com/cantiir2\n\nJangan ragu untuk terhubung atau menghubungi saya jika ingin berdiskusi tentang peluang atau kolaborasi!"
+          }
+        ],
+        "smalltalk.greet": [
+          {
+            "answer": "Halo! Saya asisten AI untuk Mochamad Alifian Hedardi Kadarusman. Kamu bisa bertanya tentang pengalaman kerja, projek, dan kemampuan teknis saya."
+          }
+        ],
+        "portfolio.more": [
+          {
+            "answer": "Kamu bisa tanya hal-hal seperti:\n- Apa yang kamu bangun di perusahaan sebelumnya?\n- Ceritakan projek dan pengalaman kerjamu.\n- Kamu suka mengerjakan masalah seperti apa?\n- Ceritakan kemampuan teknismu."
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
